@@ -20,6 +20,7 @@ console.log(a)
 
 b--   // Decremento
 console.log(b)
+console.log("________________________________________________________________")
 
 // Operadores de asignación: Es cuando aisgnamos algun valor a una variable 
 let myVariable = 2
@@ -38,6 +39,7 @@ myVariable *= 2
 myVariable /= 2  
 myVariable %= 2  
 myVariable **= 2  
+console.log("________________________________________________________________")
 
 // Operadores de comparación: Como el nombre lo indica para comparar valores.  
 /*  En la leccion anterior vimos los tipo de dato booleano, donde este tipo de dato nos sirve para saver si algo 
@@ -92,8 +94,42 @@ console.log(undefined === null)
     6. El bboolean false 
     7. Cadenas de texto vacias
 */
+console.log("________________________________________________________________")
 
-// Operadores Lógicos: 1:39
+// Operadores Lógicos: Los operadores logicos logicos nos sirven para comparar valores, comparar su valor booleano, donde estamos identificando si una expresion es verdadera o falsa.
+// and (&&):
+console.log(5 > 10 && 15 > 20)   // falso | falso = falso. Si las condiciones son falsas, la expresion es falsa.
+console.log(5 < 10 && 15 < 20)   // Verdadero | Verdadero = Verdadero. Si las condiciones son verdaderas, la expresion es verdadera.
+console.log(5 < 10 && 15 > 20)   // Verdadero | Falso = Falso. Si una de las condiciones es falso, la expresion es falso. 
+console.log(5 > 10 && 15 > 20 && 30 > 40)  // Podemos seguir comparando | Si unas de las expresiones falsa la expreesion es falsa.
+/* En AND Si se cumple las dos condiciones es verdadero    
+*/
+
+// or (||): 
+console.log(5 > 10 || 15 > 20)   // falso | falso = falso. Si las condiciones son falsas, la expresion es falsa.
+console.log(5 < 10 || 15 < 20)   // Verdadero | Verdadero = Verdadero. Si las condiciones son verdaderas, la expresion es verdadera.
+console.log(5 < 10 || 15 > 20)   // Verdadero | Falso = Verdadero. Si una de las condiciones es verdadero, la expresion es verdadero.
+console.log(5 > 10 || 15 > 20 || 30 > 40)
+
+// Combinando ambos operadores
+console.log(5 > 10 && 15 > 20 || 30 < 40)  // En el AND  es falso y el OR es verdadero = Verdadero.
+
+// not (!): Este operador nos sirve para negar, Negamos el valor o invertimos el valor 
+console.log(!true)
+console.log(!false)
+console.log(!(5 > 10 && 15 > 20))    // Pasa de false a true 
+console.log(!(5 > 10 || 15 > 20))    // Pasa de false a true
+console.log("________________________________________________________________")
+
+// Operadores Ternarios: Permiten escribir una condición en una sola linea.
+const isRaining = false
+
+isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo")
+/* 
+   Primero queremos accedemos a la variable, constante o propiedad que queremos inspeccionar 
+   El operador ternario esta cconformado por dos simbolos ? (Si es verdadero ejecuta lo que indiquemos aquí) : (Si no se cumple se ejecuta lo que esta después de los dos puntos)
+   Si es verdadero se ejecuta antes de los dos puntos : Si es falso se ejecuta despues de los dos puntos. 
+*/
 
 
 
