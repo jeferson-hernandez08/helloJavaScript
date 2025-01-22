@@ -2,6 +2,7 @@
    Se clasifican en diferentes categorias segun la funcionabilidad. 
 */
 
+console.log("___________________________Operadores Aritméticos_____________________________________")
 // Operadores Aritméticos: Son los operadores que ya conocemos, suma, resta, multiplicaion y division. 
 let a = 5
 let b = 10 
@@ -20,8 +21,8 @@ console.log(a)
 
 b--   // Decremento
 console.log(b)
-console.log("________________________________________________________________")
 
+console.log("____________________________Operadores de Asignación____________________________________")
 // Operadores de asignación: Es cuando aisgnamos algun valor a una variable 
 let myVariable = 2
 console.log(myVariable)
@@ -39,8 +40,8 @@ myVariable *= 2
 myVariable /= 2  
 myVariable %= 2  
 myVariable **= 2  
-console.log("________________________________________________________________")
 
+console.log("____________________________Operadores de Comparación____________________________________")
 // Operadores de comparación: Como el nombre lo indica para comparar valores.  
 /*  En la leccion anterior vimos los tipo de dato booleano, donde este tipo de dato nos sirve para saver si algo 
    es verdadero o falso. 
@@ -79,6 +80,7 @@ console.log(0 === "")
 console.log(undefined == null)   // Nos indica la ausencia de valor = True
 console.log(undefined === null)  
 
+console.log("____________________________Truthy and Falsy Values____________________________________")
 // Truthy values (valores verdaderos): Valores verdaderos por que que el lenguaje JS le da la gana.
 /*  1. Todos los numeros positivos y negativos menos el cero.
     2. Todas las cadenas de texto menos las vacías.
@@ -94,8 +96,8 @@ console.log(undefined === null)
     6. El bboolean false 
     7. Cadenas de texto vacias
 */
-console.log("________________________________________________________________")
 
+console.log("______________________________Operadores Lógicos__________________________________")
 // Operadores Lógicos: Los operadores logicos logicos nos sirven para comparar valores, comparar su valor booleano, donde estamos identificando si una expresion es verdadera o falsa.
 // and (&&):
 console.log(5 > 10 && 15 > 20)   // falso | falso = falso. Si las condiciones son falsas, la expresion es falsa.
@@ -119,8 +121,8 @@ console.log(!true)
 console.log(!false)
 console.log(!(5 > 10 && 15 > 20))    // Pasa de false a true 
 console.log(!(5 > 10 || 15 > 20))    // Pasa de false a true
-console.log("________________________________________________________________")
 
+console.log("_____________________________Operadores Ternarios___________________________________")
 // Operadores Ternarios: Permiten escribir una condición en una sola linea.
 const isRaining = false
 
