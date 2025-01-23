@@ -43,7 +43,7 @@ myVariable **= 2
 
 console.log("____________________________Operadores de Comparación____________________________________")
 // Operadores de comparación: Como el nombre lo indica para comparar valores.  
-/*  En la leccion anterior vimos los tipo de dato booleano, donde este tipo de dato nos sirve para saver si algo 
+/*  En la leccion anterior vimos los tipo de dato booleano, donde este tipo de dato nos sirve para saber si algo 
    es verdadero o falso. 
    Los operadores de comparacion nos van a servir para comparar variables, para comparar propiedades y el resultado de esa 
    comparación nos va a dar un boolean si es verdadero o falso (SI o NO)

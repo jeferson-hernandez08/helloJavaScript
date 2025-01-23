@@ -177,6 +177,31 @@ resultado **= incremento;  // resultado = resultado ** incremento
 
 console.log("Resultado final:", resultado);
 
+// 3. Imprime 5 comparaciones verdaderas con diferentes operadores de comparación.
+console.log("___________________________Respuesta Pregunta 3_____________________________________")
+let num1 = 5 + 1
+let num2 = 10 
+let num3 = 10
+
+console.log(num1 < num2)
+console.log(num2 > num1)
+console.log(num2 >= num3)
+console.log(num2 == num3)
+console.log(num1 == 6)
+
+// 4. Imprime 5 comparaciones falsas con diferentes operadores de comparación.  
+console.log("___________________________Respuesta Pregunta 4_____________________________________")
+console.log(num1 > num2)
+console.log(num2 < num1)
+console.log(num2 <= num1)
+console.log(num1 == num2)
+console.log(num1 === "6")
+
+
+
+
+
+
 
 
 
