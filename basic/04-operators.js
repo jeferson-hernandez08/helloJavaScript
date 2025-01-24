@@ -104,7 +104,8 @@ console.log(5 > 10 && 15 > 20)   // falso | falso = falso. Si las condiciones so
 console.log(5 < 10 && 15 < 20)   // Verdadero | Verdadero = Verdadero. Si las condiciones son verdaderas, la expresion es verdadera.
 console.log(5 < 10 && 15 > 20)   // Verdadero | Falso = Falso. Si una de las condiciones es falso, la expresion es falso. 
 console.log(5 > 10 && 15 > 20 && 30 > 40)  // Podemos seguir comparando | Si unas de las expresiones falsa la expreesion es falsa.
-/* En AND Si se cumple las dos condiciones es verdadero    
+/* 
+   En AND se cumple SI las dos condiciones es verdadero    
 */
 
 // or (||): 
@@ -112,6 +113,9 @@ console.log(5 > 10 || 15 > 20)   // falso | falso = falso. Si las condiciones so
 console.log(5 < 10 || 15 < 20)   // Verdadero | Verdadero = Verdadero. Si las condiciones son verdaderas, la expresion es verdadera.
 console.log(5 < 10 || 15 > 20)   // Verdadero | Falso = Verdadero. Si una de las condiciones es verdadero, la expresion es verdadero.
 console.log(5 > 10 || 15 > 20 || 30 > 40)
+/* 
+   En OR se cumple SI solo una de las condiciones es verdadero    
+*/
 
 // Combinando ambos operadores
 console.log(5 > 10 && 15 > 20 || 30 < 40)  // En el AND  es falso y el OR es verdadero = Verdadero.

@@ -197,6 +197,57 @@ console.log(num2 <= num1)
 console.log(num1 == num2)
 console.log(num1 === "6")
 
+// 5. Utiliza el operador lógico AND
+console.log("___________________________Respuesta Pregunta 5_____________________________________")
+console.log(5 > 3 && 2 < 3)
+console.log(4 > 2 && 3 < 1)
+console.log(2 > 1 && 7 > 5 && 20 > 10)
+console.log(1 > 2 && 7 > 5 && 20 > 10)
+
+// 6. Utiliza el operador lógico OR
+console.log("___________________________Respuesta Pregunta 6_____________________________________")
+console.log(5 > 3 || 2 < 3)
+console.log(4 < 2 || 3 < 1)
+console.log(2 > 1 || 7 > 5 && 20 > 10)
+console.log(1 > 2 || 7 < 5 && 20 < 10)
+
+// 7. Combina ambos operadores lógicos.
+console.log("___________________________Respuesta Pregunta 7_____________________________________")
+console.log(9 > 6 && 1 > 2 || 8 > 4)
+console.log(9 > 6 || 1 > 2 && 8 > 10)    // JavaScript por defecto valida primero el AND.
+console.log((9 > 6 || 1 > 2) && 8 > 10)  // Si queremos que valide primero el OR lo concatenamos con ()
+
+// 8. Añade alguna negación
+console.log("___________________________Respuesta Pregunta 8_____________________________________")
+console.log(!(9 > 6 && 1 > 2 || 8 > 4))
+console.log(!(9 < 6 || 1 > 2) && !(8 > 10))  // Usamos la negación NOT con paretesis ()
+
+// 9. Utiliza el operador ternario
+console.log("___________________________Respuesta Pregunta 9_____________________________________")
+let soyElMejor = true
+
+soyElMejor ? console.log("Constancia y diciplina") : console.log("Trabaja duro y se más diciplinado")
+
+// 10. Combina operadores aritméticos, de comparación y lógicos
+console.log("___________________________Respuesta Pregunta 10_____________________________________")
+let e = 10
+let f = 5
+let g = 20
+let h = 25
+
+console.log((e + f) > g && g > f && e < f || (f + g) >= h)
+console.log(((e + f) > g && g > f && e < f) || ((f + g) >= h))   // Se puede concatenar con () para que quede mas entendible. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
