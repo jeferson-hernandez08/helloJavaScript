@@ -53,7 +53,20 @@ console.log("___________________________Respuesta Pregunta 7____________________
 console.log(greeting1.replaceAll(" ", "-"))
 
 // 8. Comprueba si una cadena de texto contiene una palabra concreta
+console.log("___________________________Respuesta Pregunta 8_____________________________________")
+console.log(greeting1.includes("Jeferson")) 
+console.log(greeting1.includes("Pepito"))    
 
 // 9. Comprueba si dos strings son iguales 
+console.log("___________________________Respuesta Pregunta 9_____________________________________")
+let string1 = "Jeferson"
+let string2 = "Sebastian"
+let string3 = "Jeferson"
+
+console.log(string1 == string2)
+console.log(string1 == string3)
 
 // 10. Comprueba si dos strings tienen la misma longitud
+console.log("___________________________Respuesta Pregunta 10_____________________________________")
+console.log(string1.length == string2.length)
+console.log(string2.length > string1.length)
