@@ -8,3 +8,26 @@
 */
 
 // if, else if, else
+
+// if (si): Significa si pasa esto haga esto. La estructura if ejecuta un bloque de código si una condición es verdadera. 
+let age = 10
+
+if (age == 37) {
+    console.log("La edad es 37")        // Si se cumple, va ejecutar el cosigo que esta en la llaves.
+}
+
+// else (si no): Significa si no, else ejecuta un bloque de código si una condición es falsa. 
+if (age == 37) {
+    console.log("La edad es 37")       
+} else {
+    console.log("La edad No es 37")
+}
+
+// else if (si no, si)
+if (age == 37) {
+    console.log("La edad es 37")       // No se cumple esta condicionn pasa a evaluar la siguiente condición y así sucesivamente
+} else if (age < 18 ) {
+    console.log("Es menor de edad")
+} else {
+    console.log("La edad No es 37 ni es menor de edad")
+}
