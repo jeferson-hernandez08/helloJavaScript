@@ -35,6 +35,7 @@
     let myBigInt2 = 32454356458973475387583475489358937n
 
 // 4. Imprime por consola el valor de todas las variables
+console.log("___________________________Respuesta Pregunta 4_____________________________________")
     console.log(miNombre)
     console.log(miEdad)
     console.log(miAltura)
@@ -45,9 +46,9 @@
     console.log(mySymbol)
     console.log(myBigInt)
     console.log(myBigInt2)
-    console.log("_____________________________________")
 
 // 5. Imprime por consola el tipo de todas variables
+console.log("___________________________Respuesta Pregunta 5_____________________________________")
     console.log(typeof miNombre)           // string
     console.log(typeof miEdad)             // number
     console.log(typeof miAltura)           // number
@@ -58,9 +59,9 @@
     console.log(typeof mySymbol)           // symbol
     console.log(typeof myBigInt)           // bigint
     console.log(typeof myBigInt2)          // bigint
-    console.log("_____________________________________")
 
 // 6. A continuación modifica los valores de las variables por otros del mismo tipo
+console.log("___________________________Respuesta Pregunta 6_____________________________________")
     // String 
     miNombre = "Sebastian Hernandez"
 
@@ -95,9 +96,9 @@
     console.log(mySymbol)
     console.log(myBigInt)
     console.log(myBigInt2)
-    console.log("_____________________________________")
 
 // 7. A continuación, modifica los valores de las variables por otros de distinto tipo
+console.log("___________________________Respuesta Pregunta 7_____________________________________")
     // String 
     miNombre = 1992
 
@@ -132,13 +133,13 @@
     console.log(mySymbol)
     console.log(myBigInt)
     console.log(myBigInt2)
-    console.log("_____________________________________")
     /*
         Podemos que al modificar las variales por otro tipo de variable No sale error 
         Debido a que JavasScript es debilmente tipado. 
      */
 
 // 8. Declara constantes con valores asociados a todos los tipos los tipos de datos primitivos.
+console.log("___________________________Respuesta Pregunta 8_____________________________________")
     // String 
     const nombrePadre = "Edgar Hernandez"
 
@@ -173,9 +174,9 @@
     console.log(apodoPadre)
     console.log(numeroLargo)
     console.log(numeroLago2)
-    console.log("_____________________________________")
 
 // 9. A continuación, modifica los valores de las constantes 
+console.log("___________________________Respuesta Pregunta 9_____________________________________")
     // String 
     //nombrePadre = "Edgar Hernandez Martinez" 
 
@@ -210,11 +211,12 @@
     console.log(apodoPadre)
     console.log(numeroLargo)
     console.log(numeroLago2)
-    console.log("_____________________________________")
 
-// 10. Comenta las lineas que produzca algún tipo de error al ejecutarse  
+// 10. Comenta las lineas que produzca algún tipo de error al ejecutarse
+console.log("___________________________Respuesta Pregunta 10_____________________________________")  
     //  Se comentan todas las variables de las varaibbles const, sale error en todas ya que que const nunca puede cambiar.
-
+console.log(`Se comentan todas las variables de las varaibbles const, sale error en todas ya que que 
+const nunca puede cambiar.`)
     
 
 

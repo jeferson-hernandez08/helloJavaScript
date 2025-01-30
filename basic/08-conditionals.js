@@ -14,7 +14,7 @@ console.log("____________________________If (si)________________________________
 let age = 37
 
 if (age == 37) {
-    console.log("La edad es 37")        // Si se cumple, va ejecutar el cosigo que esta en la llaves.
+    console.log("La edad es 37")        // Si se cumple, va ejecutar el cosigo que esta en las llaves.
 }
 
 console.log("____________________________Else (si no)____________________________________")

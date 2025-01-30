@@ -1,6 +1,25 @@
 // if/else/else if/ternaria
 
 // 1. Imprime por consola tu nombre si una variable toma su valor
+console.log("___________________________Respuesta Pregunta 1_____________________________________")
+console.log("******Primera Forma******")
+let myName = 1
+let miNombre = "Jeferson Hernandez"
+
+if (myName == 1) {
+    console.log("Mi nombre es: Jeferson Hernandez")    // Forma # 1 normal
+    console.log("Mi nombre es: " + miNombre)           // Forma concatenada # 2
+    console.log(`Mi nombre es: ${miNombre}`)           // Forma concatenada # 3
+}
+
+console.log("******Segunda Forma******")
+let nombre = NaN;                  // Asigna tu nombre a la variable
+
+if (nombre) {                    // Verifica si la variable nombre tiene un valor
+    console.log(nombre);
+} else {                         // Si la variable nombre no tiene un valor (es decir, es null, undefined, false, 0, NaN, o una cadena vacía ""), se ejecuta el bloque else
+    console.log("La variable 'nombre' no tiene un valor asignado.");
+}
 
 // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
 
