@@ -263,7 +263,6 @@ if (mesDelAño == "enero") {
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
 console.log("___________________________Respuesta Pregunta 8_____________________________________")
 let idioma = "frances"
-let saludo
 
 switch (idioma) {
     case "español":
@@ -279,9 +278,29 @@ switch (idioma) {
         console.log("Bonjour comment allez-vous")
         break
     default: 
-        console.log("Idioma Erroneo")
+        console.log("Idioma Erroneo, no reconocido")   
+        break       // Recordemos que el break del default es opcional
 }
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
+console.log("___________________________Respuesta Pregunta 9_____________________________________")
+let mesDelAño2 = "agosto"
+
+switch (mesDelAño2) {
+    case "marzo":    // Primavera
+    case "abril":
+    case "mayo":
+        console.log("Nos encontramos en la estación del año: PRIMAVERA")
+        break
+    case "junio":    // Verano
+    case "agosto":
+    case "septiembre":
+        console.log("Nos encontramos en la estación del año: VERANO")
+        break
+    
+    
+
+
+}
 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
