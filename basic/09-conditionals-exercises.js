@@ -197,14 +197,90 @@ puedeVotar(18);  // Puede votar.
 
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad 
+console.log("___________________________Respuesta Pregunta 5_____________________________________")
+let personaEdad = 14
+let mensaje = personaEdad >= 18 ? "Adulto" : "Menor"
+console.log(mensaje)
+/*  
+    Recordemos que está estructura de código es lo mismo que la siguiente de if:
+    let mensaje;
+
+    if (personaEdad >= 18) {
+        mensaje = "Adulto";
+    } else {
+        mensaje = "Menor";
+    }
+    console.log(mensaje);
+*/
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+console.log("___________________________Respuesta Pregunta 6_____________________________________")
+let mesDelAño = "noviembre"
+
+if (mesDelAño === "marzo" || mesDelAño === "abril" || mesDelAño === "mayo") {   // Primavera 
+    console.log("Nos encontramos en la estación del año: PRIMAVERA")
+} else if (mesDelAño === "junio" || mesDelAño === "julio" || mesDelAño === "agosto") {   // Verano 
+    console.log("Nos encontramos en la estación del año: VERANO")
+} else if (mesDelAño === "septiembre" || mesDelAño === "octubre" || mesDelAño === "noviembre") {   // Otoño
+    console.log("Nos encontramos en la estación del año: OTOÑO")
+} else if (mesDelAño === "diciembre" || mesDelAño === "enero" || mesDelAño === "febrero") {   // Invierno
+    console.log("Nos encontramos en la estación del año: INVIERNO")
+} else {
+    console.log("Error: Mes erroneo, intente nuevamente")
+}
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+console.log("___________________________Respuesta Pregunta 7_____________________________________")
+if (mesDelAño == "enero") {
+    console.log("Mes enero: 31 días")
+} else if (mesDelAño == "febrero") {
+    console.log("Mes febrero: 28 o 29 días")
+} else if (mesDelAño == "Marzo") {
+    console.log("Mes de marzo: 31 días")
+} else if (mesDelAño == "abril") {
+    console.log("Mes de abril: 30 días")
+} else if (mesDelAño == "mayo") {
+    console.log("Mes de mayo: 31 días")
+} else if (mesDelAño == "junio") {
+    console.log("Mes de junio: 30 días")
+} else if (mesDelAño == "julio") {
+    console.log("Mes de julio: 31 días")
+} else if (mesDelAño == "agosto") {
+    console.log("Mes de agosto: 31 días")
+} else if (mesDelAño == "septiembre") {
+    console.log("Mes de septiembre: 30 días")
+} else if (mesDelAño == "octubre") {
+    console.log("Mes de octubre: 31 días")
+} else if (mesDelAño == "noviembre") {
+    console.log("Mes de noviembre: 30 días")
+} else if (mesDelAño == "diciembre") {
+    console.log("Mes de diciembre: 31 días")
+} else {
+    console.log("Dato erronéo")
+}
 
 // switch
-
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+console.log("___________________________Respuesta Pregunta 8_____________________________________")
+let idioma = "frances"
+let saludo
+
+switch (idioma) {
+    case "español":
+        console.log("Hola, como estas")
+        break
+    case "ingles":
+        console.log("Hello, how are you")
+        break
+    case "aleman":
+        console.log("Hallo, wie geht es dir")
+        break
+    case "frances":
+        console.log("Bonjour comment allez-vous")
+        break
+    default: 
+        console.log("Idioma Erroneo")
+}
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 

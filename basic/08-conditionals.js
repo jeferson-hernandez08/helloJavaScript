@@ -69,9 +69,15 @@ console.log(message)
     }
     console.log(mensaje)
 
-    El resultado lo podemos asignar a una variable o una constante y despues podemos trabajar con ese resultado
+    El resultado lo podemos asignar o guardar a una variable o una constante y despues podemos trabajar con ese resultado
     Lo cual asignamos el resultado ternario a esa constante message
     Los operadores ternarios mucha veces se usan para operaciones simples.
+    Diferencias clave:
+    Aspecto	        Operador Ternario	                            Condicional if-else
+    Sintaxis	    Compacta (una sola línea).	                    Más extensa (varias líneas).
+    Legibilidad	    Ideal para condiciones simples. 	            Mejor para lógica más compleja.
+    Flexibilidad	Solo permite una expresión por caso.	        Permite múltiples sentencias por bloque.
+    Uso típico	    Asignaciones directas o retornos de valores.	Bloques de código más largos o complejos.
 */
 
 /*  Recordemos que el operador ternario va primero la validación del if, age == 37 ?, si se cumple va antes
