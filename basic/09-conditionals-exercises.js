@@ -226,7 +226,7 @@ if (mesDelAño === "marzo" || mesDelAño === "abril" || mesDelAño === "mayo") {
 } else if (mesDelAño === "diciembre" || mesDelAño === "enero" || mesDelAño === "febrero") {   // Invierno
     console.log("Nos encontramos en la estación del año: INVIERNO")
 } else {
-    console.log("Error: Mes erroneo, intente nuevamente")
+    console.log(`Error: "${mesDelAño}" no es un mes válido, intente nuevamente.`)
 }
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
