@@ -139,8 +139,61 @@ console.log("******Quita Forma******")
 
 // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
 console.log("___________________________Respuesta Pregunta 3_____________________________________")
+console.log("******Primera Forma******")   // Por mi
+let numero = -1
+
+if (numero > 0) {
+    console.log("El número es positivo: " + numero)
+} else if (numero == 0 ) {
+    console.log("El número es cero: " + numero)
+} else {
+    console.log("El número es negativo: " + numero)
+}
+
+console.log("******Segunda Forma******")   // Segunda forma avanzada aplicando funciones
+function verificarNumero(numero) {
+    if (numero > 0) {
+        console.log("El número es positivo.");
+    } else if (numero < 0) {
+        console.log("El número es negativo.");
+    } else {
+        console.log("El número es cero.");
+    }
+}
+
+// Ejemplos de uso:
+verificarNumero(10);   // El número es positivo.
+verificarNumero(-5);   // El número es negativo.
+verificarNumero(0);    // El número es cero.
 
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+console.log("___________________________Respuesta Pregunta 4_____________________________________")
+console.log("******Primera Forma******")  // Por mí
+let edadPersona = 15
+let añosFaltantes
+
+if (edadPersona >= 18) {
+    console.log("La persona puede votar, es mayor de edad")
+} else {
+    añosFaltantes = 18 - edadPersona
+    console.log("La persona No puede votar, es menor edad ")
+    console.log(`A la persona le faltan ${añosFaltantes} años para poder votar.`)
+}
+
+console.log("******Segunda Forma******")   // Segunda forma avanzada aplicando funciones
+function puedeVotar(edad) {
+    if (edad >= 18) {
+        console.log("Puede votar.");
+    } else {
+        const añosFaltantes = 18 - edad;
+        console.log(`No puede votar. Le faltan ${añosFaltantes} años para poder votar.`);
+    }
+}
+
+// Ejemplos de uso:
+puedeVotar(20);  // Puede votar.
+puedeVotar(15);  // No puede votar. Le faltan 3 años para poder votar.
+puedeVotar(18);  // Puede votar.
 
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad 
