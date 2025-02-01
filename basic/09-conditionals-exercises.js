@@ -284,23 +284,31 @@ switch (idioma) {
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 console.log("___________________________Respuesta Pregunta 9_____________________________________")
-let mesDelAño2 = "agosto"
+let mesDelAño2 = "eneddro"
 
 switch (mesDelAño2) {
-    case "marzo":    // Primavera
+    case "marzo":        // Primavera
     case "abril":
     case "mayo":
         console.log("Nos encontramos en la estación del año: PRIMAVERA")
         break
-    case "junio":    // Verano
+    case "junio":        // Verano
+    case "julio":
     case "agosto":
-    case "septiembre":
         console.log("Nos encontramos en la estación del año: VERANO")
         break
-    
-    
-
-
+    case "septiembre":   // Otoño
+    case "octubre":      
+    case "noviembre": 
+        console.log("Nos encontramos en la estación del año: OTOÑO")
+        break
+    case "diciembre":   // Invierno
+    case "enero":      
+    case "febrero": 
+        console.log("Nos encontramos en la estación del año: INVIERNO")
+        break
+    default: 
+        console.log(`Error: "${mesDelAño2}" no es un mes válido, intente nuevamente.`)
 }
 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
