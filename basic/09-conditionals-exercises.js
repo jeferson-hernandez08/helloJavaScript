@@ -284,7 +284,7 @@ switch (idioma) {
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 console.log("___________________________Respuesta Pregunta 9_____________________________________")
-let mesDelAño2 = "eneddro"
+let mesDelAño2 = "febrero"
 
 switch (mesDelAño2) {
     case "marzo":        // Primavera
@@ -312,3 +312,44 @@ switch (mesDelAño2) {
 }
 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
+console.log("___________________________Respuesta Pregunta 10_____________________________________")
+switch (mesDelAño2) {
+    case "enero":
+        console.log("Mes de enero: 31 días")
+        break
+    case "febrero": 
+        console.log("Mes de febrero: 28 o 29 días")
+        break
+    case "marzo": 
+        console.log("Mes de marzo: 31 días")
+        break
+    case "abril": 
+        console.log("Mes de abril: 30 días")
+        break
+    case "mayo": 
+        console.log("Mes de mayo: 31 días")
+        break
+    case "junio": 
+        console.log("Mes de junio: 30 días")
+        break
+    case "julio": 
+        console.log("Mes de julio: 31 días")
+        break
+    case "agosto": 
+        console.log("Mes de agosto: 31 días")
+        break
+    case "septiembre": 
+        console.log("Mes de septiembre: 30 días")
+        break
+    case "octubre": 
+        console.log("Mes de octubre: 31 días")
+        break
+    case "noviembre": 
+        console.log("Mes de noviembre: 30 días")
+        break
+    case "diciembre": 
+        console.log("Mes de diciembre: 31 días")
+        break
+    default:
+        console.log(`Error: "${mesDelAño2}" no es un mes válido, intente nuevamente.`)
+}
