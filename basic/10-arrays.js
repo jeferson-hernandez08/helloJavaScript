@@ -9,7 +9,7 @@
 
 // Arrays: También llamadas listas, son utiles cuando necesitamos manejar una lista de elementos sea numeros, textos, etc. 
 console.log("____________________________Declaración de array____________________________________")
-// Declaración
+// Declaración de array
 let myArray = []             // Aqui definimos una estructura de datos que nos permite almacenar un listado de datos.
 let myArray2 = new Array()   // Otra forma de crear un array
 
@@ -19,7 +19,7 @@ console.log(myArray2)
     Estas dos formas son iguales, pero es recomendado usar la primera forma
 */
 
-// Inicialización
+// Inicialización de array
 console.log("____________________________Inicialización de array____________________________________")
 myArray = [3]                // Metemos un dato númerico, lo cual está guardando un numero
 myArray2 = new Array(3)      // Aquí en esta forma se esta reservando un hueco [ <1 empty item> ], 3 = [ <3 empty items> ]
@@ -79,7 +79,7 @@ console.log("____________________________Métodos comunes_______________________
 myArray = []
 
 console.log("____________________________Push____________________________________")
-// Push: El push es la operacion para introducir elementos en el array 
+// Push: El push es la operacion para agregar elementos en el array 
 myArray.push("Jeferson")
 myArray.push("Sebastian")
 myArray.push("Arely")
