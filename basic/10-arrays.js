@@ -8,6 +8,7 @@
 */
 
 // Arrays: También llamadas listas, son utiles cuando necesitamos manejar una lista de elementos sea numeros, textos, etc. 
+console.log("____________________________Declaración de array____________________________________")
 // Declaración
 let myArray = []             // Aqui definimos una estructura de datos que nos permite almacenar un listado de datos.
 let myArray2 = new Array()   // Otra forma de crear un array
@@ -19,6 +20,7 @@ console.log(myArray2)
 */
 
 // Inicialización
+console.log("____________________________Inicialización de array____________________________________")
 myArray = [3]                // Metemos un dato númerico, lo cual está guardando un numero
 myArray2 = new Array(3)      // Aquí en esta forma se esta reservando un hueco [ <1 empty item> ], 3 = [ <3 empty items> ]
 
@@ -76,6 +78,7 @@ console.log("____________________________Métodos comunes_______________________
 // Métodos comunes: Push y Pop
 myArray = []
 
+console.log("____________________________Push____________________________________")
 // Push: El push es la operacion para introducir elementos en el array 
 myArray.push("Jeferson")
 myArray.push("Sebastian")
@@ -90,9 +93,79 @@ console.log(myArray)
     sucesivamente el segundo elemento lo mete en el indice 1, el tercero en el indice 2, etc ... 
 */
 
+console.log("____________________________Pop____________________________________")
 // Pop: El pop elimina el ultimo elemento del array
+console.log(myArray.pop())     // Elimina el último y lo devuelve 
 myArray.pop()
 
+console.log(myArray)
+/* 
+    Podemos ver que pop elimina el ultimo elemento de la lista 
+    El push agrega elementos al final del array y el pop elimina el ultimo elemento del array 
+*/
+
+console.log("____________________________Shift____________________________________")
+// shift y Unshift: 
+// Schift: El shift elimina el primer elemento del array 
+myArray.shift()      // Elimina "Jeferson"
+
+console.log(myArray.shift())   // Elimina el primer elemento del array y lo devulve ("Sebastian")
+console.log(myArray)
+
+console.log("____________________________Unshift____________________________________")
+// Unshift: El unshift sirve para agregar uno a mas elmentos al principio del array 
+myArray.unshift("Pepito", "Pepita")
+console.log(myArray)
+
+console.log("____________________________Length____________________________________")
+// length: Length es una propiedad y no una funcion, es la longitud o tamaño de nuestro array
+console.log(myArray.length)
+
+console.log("____________________________Clear____________________________________")
+// clear
+myArray = []
+myArray.length = 0       // Ptra alternativa No recomendada
+console.log(myArray)
+
+console.log("____________________________Slice____________________________________")
+// slice: Slice devuelve una copia superficial de una porción, nos genera un nuevo array pero justo con el pedazo que queremos
+myArray = ["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true]
+
+let myNewArray = myArray.slice(2, 4)    // Para quedarnos con los elementos "Hernandez", "Ladino", el segundo valor no se cuenta asi que ponemos 2, 4
+
+console.log(myArray)
+console.log(myNewArray)
+/*  
+    Podemos ver que para quedarme con los elementos  "Hernandez", "Ladino" unicamente, ponemos el pedazo unicamente
+    en este caso 2, 4 . Donde el 3 No se tiene en cuenta 
+*/
+
+console.log("____________________________Splice____________________________________")
+// splice: Splice elimina los elementos, desde el indece que queremos empezar a eliminar y cuantos elementos queremos eliminar.
+myArray.splice(2, 3)
+
+console.log(myArray)
+/*  
+    myArray.splice(2, 2), el primer valor 2 es desde que elemento queremos eliminar osea que desde "Hernandez",
+    y el segundo valor 3 es cuantos elementos queremos eliminar osea que eliminamos tres elementos
+    "Hernandez", "Ladino", 37. Quedando en nuestro array final [ 'Jeferson', 'Sebastian', true ]      2:44
+*/  
+
+myArray = ["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true]
+
+myArray.splice(1, 2, "Nuevo elemento")
+
+console.log(myArray)
+/*  
+    En esto ejemplo podemos ver que el primer valor 1 es desde dpnde queremos eliminar, el segundo valor 2 es cuantos
+    elementos queremos eliminar ("Sebastian", "Hernandez") y el tercer 3 elemento es que a la vez que eliminamos y
+    asignamos un nuevo valor partir de la pocision 1.
+    Este es un pequeño ejemplo de como podemos manipular arrays 
+*/ 
+/*  
+    Ya vimos la primera estructura de datos javaScript, pero nos falta por ver mas estructuras de datos a 
+    continuación
+*/ 
 
 
 
