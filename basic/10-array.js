@@ -47,9 +47,10 @@ console.log(myArray2)
     Como podemos ver que podemos ir agregando valores y mezclar strings con numeros, booleans, etc. Podemos mezclar lo que se nos de la gana. 
 */
 myArray2 = new Array(3)
-myArray2[0] = "Jeferson"
+//myArray2[0] = "Jeferson"
 myArray2[1] = "Sebastian"
 myArray2[2] = "Hernandez"
+myArray2[4] = "Hernandez"     // Pordemos que lo asigna sin importar la reservacion
 
 console.log(myArray2)
 /*  
@@ -58,5 +59,40 @@ console.log(myArray2)
     Podemos ver como almacena cada uno en la posición los datos en el array, aqui podemos ver una de las 
     cualidades más importantes del array es que el listado es ordenado, en el momento que metemos un elemento o una posicion
     ese elemento se nos asigna. O tambien podemos mover ese elemento otra posición.
+    Podemos ver que si comentamos un dato vemos que la pocisión 0 queda vacia o reservada
 */
+myArray = []
+//myArray[0] = "Jeferson"
+myArray[1] = "Sebastian"
+myArray[2] = "Hernandez"
+
+console.log(myArray)
+/*  
+    Lo que ha hecho aquí es que a ido reservando y modificando su tamaño y sus huecos a medida que lo vamos ejecutando,
+    lo cual es lo realiza solo
+*/
+
+console.log("____________________________Métodos comunes____________________________________")
+// Métodos comunes: Push y Pop
+myArray = []
+
+// Push: El push es la operacion para introducir elementos en el array 
+myArray.push("Jeferson")
+myArray.push("Sebastian")
+myArray.push("Arely")
+myArray.push("Edgar")
+myArray.push("Familia Feliz")
+myArray.push(1992)
+
+console.log(myArray)
+/* 
+    Podemos ver que sigue un orden el primer push que se ejecute si el array es vacio lo mete en el 0 y asi 
+    sucesivamente el segundo elemento lo mete en el indice 1, el tercero en el indice 2, etc ... 
+*/
+
+// Pop: El pop elimina el ultimo elemento del array
+myArray.pop()
+
+
+
 
