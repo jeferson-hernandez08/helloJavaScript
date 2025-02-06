@@ -43,6 +43,8 @@ console.log(mySet)
     Lo cual con el set no tenemos acceso a los indices.
     Lo cual si le decimos que nos muestre uno solo elemento de la lista no nos va dejar: console.log(mySet[4])
  */
+console.log(mySet.delete("Jeferson"))
+console.log(mySet)  // min 2:53
 
  /*
     Anteriormente para agregar y eliminar un dato de nuestro array era con push y pop. 
