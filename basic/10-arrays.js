@@ -8,8 +8,8 @@
 */
 
 // Arrays: También llamadas listas, son utiles cuando necesitamos manejar una lista de elementos sea numeros, textos, etc. 
-console.log("____________________________Declaración de array____________________________________")
 // Declaración de array
+console.log("____________________________Declaración de array____________________________________")
 let myArray = []             // Aqui definimos una estructura de datos que nos permite almacenar un listado de datos.
 let myArray2 = new Array()   // Otra forma de crear un array
 
@@ -74,12 +74,12 @@ console.log(myArray)
     lo cual es lo realiza solo
 */
 
-console.log("____________________________Métodos comunes____________________________________")
 // Métodos comunes: Push y Pop
+console.log("____________________________Métodos comunes____________________________________")
 myArray = []
 
-console.log("____________________________Push____________________________________")
 // Push: El push es la operacion para agregar elementos en el array 
+console.log("____________________________Push____________________________________")
 myArray.push("Jeferson")
 myArray.push("Sebastian")
 myArray.push("Arely")
@@ -93,8 +93,8 @@ console.log(myArray)
     sucesivamente el segundo elemento lo mete en el indice 1, el tercero en el indice 2, etc ... 
 */
 
-console.log("____________________________Pop____________________________________")
 // Pop: El pop elimina el ultimo elemento del array
+console.log("____________________________Pop____________________________________")
 console.log(myArray.pop())     // Elimina el último y lo devuelve 
 myArray.pop()
 
@@ -104,31 +104,31 @@ console.log(myArray)
     El push agrega elementos al final del array y el pop elimina el ultimo elemento del array 
 */
 
-console.log("____________________________Shift____________________________________")
 // shift y Unshift: 
 // Schift: El shift elimina el primer elemento del array 
+console.log("____________________________Shift____________________________________")
 myArray.shift()      // Elimina "Jeferson"
 
 console.log(myArray.shift())   // Elimina el primer elemento del array y lo devulve ("Sebastian")
 console.log(myArray)
 
-console.log("____________________________Unshift____________________________________")
 // Unshift: El unshift sirve para agregar uno a mas elmentos al principio del array 
+console.log("____________________________Unshift____________________________________")
 myArray.unshift("Pepito", "Pepita")
 console.log(myArray)
 
-console.log("____________________________Length____________________________________")
 // length: Length es una propiedad y no una funcion, es la longitud o tamaño de nuestro array
+console.log("____________________________Length____________________________________")
 console.log(myArray.length)
 
-console.log("____________________________Clear____________________________________")
 // clear
+console.log("____________________________Clear____________________________________")
 myArray = []
 myArray.length = 0       // Ptra alternativa No recomendada
 console.log(myArray)
 
-console.log("____________________________Slice____________________________________")
 // slice: Slice devuelve una copia superficial de una porción, nos genera un nuevo array pero justo con el pedazo que queremos
+console.log("____________________________Slice____________________________________")
 myArray = ["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true]
 
 let myNewArray = myArray.slice(2, 4)    // Para quedarnos con los elementos "Hernandez", "Ladino", el segundo valor no se cuenta asi que ponemos 2, 4
@@ -140,8 +140,8 @@ console.log(myNewArray)
     en este caso 2, 4 . Donde el 3 No se tiene en cuenta 
 */
 
-console.log("____________________________Splice____________________________________")
 // splice: Splice elimina los elementos, desde el indece que queremos empezar a eliminar y cuantos elementos queremos eliminar.
+console.log("____________________________Splice____________________________________")
 myArray.splice(2, 3)
 
 console.log(myArray)
