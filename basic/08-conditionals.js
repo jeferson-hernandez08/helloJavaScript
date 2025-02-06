@@ -6,19 +6,18 @@
     Con los condiciales podemos tomar decisiones en funcion de un resultado si es falso o verdadero, esto es muy importante
     para tomar desiones en nuestro código.
 */
-
 // if, else if, else
 
+// If (si): Significa si pasa esto haga esto. La estructura if ejecuta un bloque de código si una condición es verdadera. 
 console.log("____________________________If (si)____________________________________")
-// if (si): Significa si pasa esto haga esto. La estructura if ejecuta un bloque de código si una condición es verdadera. 
 let age = 37
 
 if (age == 37) {
     console.log("La edad es 37")        // Si se cumple, va ejecutar el cosigo que esta en las llaves.
 }
 
+// Else (si no): Significa si no, else ejecuta un bloque de código si una condición es falsa. 
 console.log("____________________________Else (si no)____________________________________")
-// else (si no): Significa si no, else ejecuta un bloque de código si una condición es falsa. 
 if (age == 37) {
     console.log("La edad es 37")
 } else {
@@ -35,8 +34,8 @@ if (age == 37) {
 }
 console.log(mensaje)
 
+// Else if (si no, si)
 console.log("____________________________Else if (si no, si)____________________________________")
-// else if (si no, si)
 if (age == 37) {
     console.log("La edad es 37")       // No se cumple esta condicionn pasa a evaluar la siguiente condición y así sucesivamente
 } else if (age < 18 ) {
@@ -52,8 +51,8 @@ if (age == 37) {
     Podemos todos los else if que queramos si queremos seguir validando mas cosas y podemos hacer condiciones mas complejas
 */
 
+// Operador Ternario: Es una forma mas rapida de escribir un if y un else. Una manera mas compacta de escribir un codicional simple.
 console.log("____________________________Operador Ternario____________________________________")
-//Operador Ternario: Es una forma mas rapida de escribir un if y un else. Una manera mas compacta de escribir un codicional simple.
 const message = age == 37 ? "La edad es 37" : "La edad No es 37"
 console.log(message)
 
@@ -86,8 +85,8 @@ console.log(message)
     age == 37 ? console.log("La edad es 37") : console.log("La edad No es 37")
 */
 
-console.log("____________________________Switch____________________________________")
 // Switch: Switch es una alternativa de anidar if else, cuando por ejemplo tenemos que metar muchos else if y else if, etc. 
+console.log("____________________________Switch____________________________________")
 /*  El Switch unicamente se usa cuando tenemos la necesidad de comparar una unica variable con varios valores posibles, 
     Es util cuando tenemos muchas condiciones que verificar pero contra una misma variable.
 */
