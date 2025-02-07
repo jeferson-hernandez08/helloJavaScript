@@ -64,7 +64,7 @@ console.log(myArray2)
     Podemos ver que si comentamos un dato vemos que la pocisión 0 queda vacia o reservada
 */
 myArray = []
-//myArray[0] = "Jeferson"
+//myArray[0] = "Jeferson"    // <1 empty item> Se va reservando
 myArray[1] = "Sebastian"
 myArray[2] = "Hernandez"
 
