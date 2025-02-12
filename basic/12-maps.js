@@ -18,8 +18,10 @@ let myMap = new Map()
 console.log(myMap)
 
 // Inicialización o asignación 
+console.log("____________________________Inicialización o Asignación del Map____________________________________")
 myMap = new Map([                                  // Lo inicializamos con los corchetes adicionalmente
     ["name", "Jeferson"],                          // Para definir el par de clave y valor tambien es corchetes, en este caso la clave es "name" y el valor es "Jeferson"
     ["email", "jefer.hernandez1@gmail.com"],       // Para añadir otro elemento lo separamos con coma.
-    ["age"], [29]
+    ["age", 29]                                  // Estamos mezclando otro tipo de datos
 ])
+console.log(myMap)        // 3:02 min
