@@ -1,15 +1,15 @@
 // set
 
-console.log("____________________________Declaración de set____________________________________")
 // Declaración de set
+console.log("____________________________Declaración de set____________________________________")
 let mySet = new Set()
 //let mySet2 = {}        // Tener muy en ceunta que esto no es Set, esto es otro de dato. No es la forma de definir un set vacio.
 
 console.log(mySet)
 //console.log(mySet2)
 
-console.log("____________________________Inicialización de set____________________________________")
 // Inicialización de set
+console.log("____________________________Inicialización de set____________________________________")
  mySet = new Set(["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true])   // Muy importante que todos los elementos deben ir en corchetes
 
  console.log(mySet)
@@ -18,11 +18,11 @@ console.log("____________________________Inicialización de set_________________
     datos
  */
 
-console.log("____________________________Métodos comunes____________________________________")
 // Metodos comunes
+console.log("____________________________Métodos comunes____________________________________")
 // add y delete
-console.log("____________________________add____________________________________")
 // add: Espara agregar un dato al final de nuestro set
+console.log("____________________________add____________________________________")
 mySet.add("jefer.hernandez1@gmail.com")   
 
 console.log(mySet)
@@ -31,8 +31,8 @@ console.log(mySet)
     lo añade al final
  */
 
-console.log("____________________________delete____________________________________")
 // delete: Es para eliminar un elemento de nuestra lista
+console.log("____________________________delete____________________________________")
 mySet.delete("jefer.hernandez1@gmail.com")  
 console.log(mySet)
 //console.log(mySet[4])     // No nos va dejar 
@@ -43,14 +43,39 @@ console.log(mySet)
     Lo cual con el set no tenemos acceso a los indices.
     Lo cual si le decimos que nos muestre uno solo elemento de la lista no nos va dejar: console.log(mySet[4])
  */
-console.log(mySet.delete("Jeferson"))
+console.log(mySet.delete("Jeferson"))   // Antes nos retorna un true
+console.log(mySet.delete(4))            // Antes nos retorna un false
 console.log(mySet)  // min 2:53
 
  /*
-    Anteriormente para agregar y eliminar un dato de nuestro array era con push y pop. 
-    Aqui podemos ver que con set para agregar y eliminar un dato es con add y delete,
-    funciona igual aunque cambia la sintaxis.
+    Podemos ver que lo que hace antes la operación delete es devolverbos un true.
+    Aqui podemos ver que nos retorna un true, esto es por que la operación delete aparte de borrar nos retorna un boolean
+    Lo podemos ver cuando acercamos el cursor en el delete la especificación, de que recibbe el valor que queramos
+    borrar y retorna despues de los dos puntos un boolean, donde retorna un true si el elemento del set existe y ha sido
+    eliminado o un false si el elemento no existe  
  */
+ /*
+    Muy importante que con este delete podemos montar un if y se borra o no se borra podemos acabar designando
+    la ejecucion de otro codigo u otro codigo ejemplo:
+
+    if (myset.delete(4)) {       // Aqui podemos montar una validación en función de lo que retorne. Si una expresion es verdadera o falsa.
+    
+    } else {
+     
+    }
+ */
+/*
+   Anteriormente para agregar y eliminar un dato de nuestro array era con push y pop. 
+   Aqui podemos ver que con set para agregar y eliminar un dato es con add y delete,
+   funciona igual aunque cambia la sintaxis.    
+*/
+
+// has      2:54 has
+
+
+
+
+   
 
 
 
