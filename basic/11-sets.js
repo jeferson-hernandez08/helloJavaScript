@@ -70,7 +70,40 @@ console.log(mySet)  // min 2:53
    funciona igual aunque cambia la sintaxis.    
 */
 
-// has      2:54 has
+// has: Es para ver si existe un elemento 
+console.log("____________________________has____________________________________")
+console.log(mySet.has("Sebastian"))    // Nos retorna un true, por que dentro del set existe "Sebastian"
+console.log(mySet.has("Jeferson"))     // Nos retorna un false, por que "Jeferson no existe" por que lo borramos anteriormente
+
+// size: Para medir la longitud o tamaño de nuestro set 
+console.log("____________________________size____________________________________")
+console.log(mySet.size)
+
+// Convertir un set a array 
+console.log("____________________________Convertir set a array____________________________________")
+let myArray = Array.from(mySet)    // Transformamos un set a un array 
+console.log(myArray)
+
+// Convertir un array a set
+console.log("____________________________Convertir array a set____________________________________")
+mySet = new Set(myArray)      // Convertimos array a set
+console.log(mySet)
+
+// Diferencia entre array y set
+console.log("____________________________Diferencia entre Array y Set____________________________________")
+mySet.add("Sebastian")
+mySet.add("Sebastian")
+mySet.add("Sebastian")
+mySet.add("sebastian")     // Podemos ver que lo que tiene que entrar debe ser exactamente igual.
+console.log(mySet)
+/* 
+   La principal diferencia entre los arrays y los sets, es que los sets no admiten duplicados.
+   El set se usa para que nosotros nos quedemos con todos los elementos unicos, en lugar del array 
+   que lo usamos para cambiar lo transformas lo elemento dentro del array. En el set por eso no nos importan 
+   las pocisiones.
+*/
+
+
 
 
 
