@@ -24,4 +24,11 @@ myMap = new Map([                                  // Lo inicializamos con los c
     ["email", "jefer.hernandez1@gmail.com"],       // Para añadir otro elemento lo separamos con coma.
     ["age", 29]                                  // Estamos mezclando otro tipo de datos
 ])
-console.log(myMap)        // 3:02 min
+console.log(myMap)  
+/* 
+    Recordemos que la diferencia de los mapas frente a los sets y a los arrays es que lo que cada elemento se
+    compone de una clave por un lado y de un valor por otro lado.
+
+*/
+
+// Metodos y propiedades: Recordemos que con los metodos y propiedades aprenderemos a manipular los map
