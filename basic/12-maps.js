@@ -32,4 +32,20 @@ console.log(myMap)
 */
 
 // Metodos y propiedades: Recordemos que con los metodos y propiedades aprenderemos a manipular los map
+console.log("____________________________Métodos y propiedades____________________________________")
+
+// Set: La operación set es para actualizar un elemento o para agregarlo
+console.log("____________________________Set____________________________________")
+myMap.set()            // Podemos acarcar el cursor y ver que el set necesita una clave(Key) y un valor(any)
+
+
+
+
+
+
+
+
+
+
+
 // Comentario quede en : 03:03 min // Estudio
