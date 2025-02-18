@@ -36,16 +36,22 @@ console.log("____________________________Métodos y propiedades_________________
 
 // Set: La operación set es para actualizar un elemento o para agregarlo
 console.log("____________________________Set____________________________________")
-myMap.set()            // Podemos acarcar el cursor y ver que el set necesita una clave(Key) y un valor(any)
+myMap.set("alias", "kuki")                  // Podemos acercar el cursor y ver que el set necesita una clave(Key) y un valor(any)
+myMap.set("name", "Jeferson Hernandez")     // Modificamos el name el valor, donde podemos ver la clave se ha actualizado
+console.log(myMap)                          // Nos aparece un cuarto elemento
+/*
+    Muy importante donde podemnos ver que no hay sets repetidos, no pueden haber sets repetidos en clave pero
+    en valor si pueden haber valores repetidos, por que la clave como su nombre lo indica es la lleve de 
+    busqueda donde es el elemento por el que vamos a encontrar unos valores por lo cual si la clave no existe
+    añade un nuevo valor y si la cave existe lo actualiza tener esto en ceunta que es muy importante.
+    Con los sets es la forma de actualizar o añadir valores
+*/
+
+// get: El get nos sirve para recuperar el valor
+console.log("____________________________Get____________________________________")
+console.log(myMap.get("name"))           // Nos imprime Jeferson Hernandez
+console.log(myMap.get("surname"))        // Nos improme undefined: Por que no existe la clave "surname"
 
 
 
-
-
-
-
-
-
-
-
-// Comentario quede en : 03:03 min // Estudio
+// Comentario quede en : 03:06 min // Estudio
