@@ -146,7 +146,7 @@ myArray.splice(2, 3)
 
 console.log(myArray)
 /*  
-    myArray.splice(2, 2), el primer valor 2 es desde que elemento queremos eliminar osea que desde "Hernandez",
+    myArray.splice(2, 3), el primer valor 2 es desde que elemento queremos eliminar osea que desde "Hernandez",
     y el segundo valor 3 es cuantos elementos queremos eliminar osea que eliminamos tres elementos
     "Hernandez", "Ladino", 37. Quedando en nuestro array final [ 'Jeferson', 'Sebastian', true ]      2:44
 */  

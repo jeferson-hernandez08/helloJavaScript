@@ -52,6 +52,29 @@ console.log("____________________________Get____________________________________
 console.log(myMap.get("name"))           // Nos imprime Jeferson Hernandez
 console.log(myMap.get("surname"))        // Nos improme undefined: Por que no existe la clave "surname"
 
+// has: El has nos sirve es para comprobar si una clave existe o no
+console.log("____________________________Has____________________________________")
+console.log(myMap.has("surname"))        // Nos imprime false por que la clave no existe
+console.log(myMap.has("age"))            // Nos imprime true por que la clave si existe
+/*
+    Aquí tenemos una operacion para saber si una clave existe o no existe, 
+    es una manera muy manejable de nosotros comprobar si una clave existe, donde con este boolean
+    tambien podemos realizarle un condicional if a este has para saber si es true o false y nos realize un 
+    bloque de código.
+*/
+
+// delete: Para eliminar un elemento con su clave del map
+console.log("____________________________Delete____________________________________")
+myMap.delete("email")             // Nos elimina email del map
+console.log(myMap) 
+
+// clear: Para eliminar todo el mapa
+console.log("____________________________Clear____________________________________")
+myMap.clear()
+console.log(myMap) 
 
 
-// Comentario quede en : 03:06 min // Estudio //Commit // // Prueba //  Prueba 
+
+
+
+// Comentario quede en : 03:08 min 
