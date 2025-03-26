@@ -78,7 +78,7 @@ console.log(myArray)
 console.log("____________________________Métodos comunes____________________________________")
 myArray = []
 
-// Push: El push es la operacion para agregar elementos en el array 
+// Push: El push es el metodo para agregar elementos en el array 
 console.log("____________________________Push____________________________________")
 myArray.push("Jeferson")
 myArray.push("Sebastian")
