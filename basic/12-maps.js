@@ -68,13 +68,28 @@ console.log("____________________________Delete_________________________________
 myMap.delete("email")             // Nos elimina email del map
 console.log(myMap) 
 
+// Keys: Nos permite ver todas las claves
+console.log("____________________________Keys____________________________________")
+console.log(myMap.keys())
+
+// Values: Ver los valores del map
+console.log("____________________________Values____________________________________")
+console.log(myMap.values())
+
 // clear: Para eliminar todo el mapa
 console.log("____________________________Clear____________________________________")
 myMap.clear()
 console.log(myMap) 
+/*
+    Podemos ver que estqas son funciones u operaciones que nos permiten manipular el map, pero tambien hay muchas 
+    propiedades lo cual lo recomendable es:
+    Nos vamos a variable:
+    mymap. y podemos ver todas las funciones que podemos usar. 
+*/
 
 
 
 
 
-// Comentario quede en : 03:08 min 
+
+// Comentario quede en : 03:09 min 
