@@ -1,3 +1,8 @@
+/*
+ Link del Curso: https://www.youtube.com/watch?v=1glVfFxj8a4&t=12748s
+ GitHub del Curso: https://github.com/mouredev/hello-javascript
+*/
+
 // Comentario simple. 
 /*
 Esto es un 
