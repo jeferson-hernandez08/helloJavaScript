@@ -1,4 +1,4 @@
-// set
+// set: Los sets tambien son estrcuturas de datos.
 
 // Declaración de set
 console.log("____________________________Declaración de set____________________________________")

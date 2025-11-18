@@ -41,7 +41,7 @@ myMap.set("name", "Jeferson Hernandez")     // Modificamos el name el valor, don
 console.log(myMap)                          // Nos aparece un cuarto elemento
 /*
     Muy importante donde podemnos ver que no hay sets repetidos, no pueden haber sets repetidos en clave pero
-    en valor si pueden haber valores repetidos, por que la clave como su nombre lo indica es la lleve de 
+    en valor si pueden haber valores repetidos, por que la clave como su nombre lo indica es la llave de 
     busqueda donde es el elemento por el que vamos a encontrar unos valores por lo cual si la clave no existe
     añade un nuevo valor y si la cave existe lo actualiza tener esto en ceunta que es muy importante.
     Con los sets es la forma de actualizar o añadir valores
@@ -76,6 +76,14 @@ console.log(myMap.keys())
 console.log("____________________________Values____________________________________")
 console.log(myMap.values())
 
+// Entries: Nos permite ver todos los valores de las claves y valores
+console.log("____________________________Entries____________________________________")
+console.log(myMap.entries())
+
+// Size: Nos dice mediante un numero cual es el tamaño del mapa
+console.log("____________________________Size____________________________________")
+console.log(myMap.size)
+
 // clear: Para eliminar todo el mapa
 console.log("____________________________Clear____________________________________")
 myMap.clear()
@@ -86,6 +94,27 @@ console.log(myMap)
     Nos vamos a variable:
     mymap. y podemos ver todas las funciones que podemos usar. 
 */
+
+/*
+    Hay que tener en cuenta que debemos diferenciarlos los arrays, los sets y los maps, lo cual tiene 
+    diferencias, donde nosotros debemos detectar por que en unos casos se debe se usar un array o set o map,
+    donde por ejemplo en nuestra app necesitamos guardar los datos de un usuario y nos eonviene mejor usar el 
+    map. 
+*/
+
+/*
+    Estas son las tres tres estucturas que posee JavaScript: Array, Set y Map.
+    Debemos aprender las caracteriscas de cada una para poder saber cuando se aplican cada una. 
+    Por ejemplo:
+    1. Yo debo guardar un listado de frutas en este xaso un array.
+    2. Yo debo guardar los datos de un usuario, pero saber en cada caso cuando acceder a cada uno de los datos, 
+       para modificarlos, utilizarlos, tratarlos, en este caso un Map. 
+    3. Yo debo guardar un liostado de elementos pero debo asegurarme que no este repetidos, entonces debemos usar
+       un set.
+
+    Logica de cada una de las definiciones.
+*/
+
 
 
 
