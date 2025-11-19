@@ -14,8 +14,9 @@ console.log(animals);
 
 // 3. Elimina el que se encuentra en tercera posición
 console.log("___________________________Respuesta Pregunta 3_____________________________________")
-console.log("******Eliminar Elementos******")
-animals.splice(2);
+console.log("******1. Eliminar Elementos******")
+console.log(animals);
+animals.splice(2, 1);
 console.log(animals);
 
 //TERMINAR AQUI TODO EL CRUDS DE EJEMPLOS

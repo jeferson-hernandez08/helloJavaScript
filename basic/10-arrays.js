@@ -139,10 +139,12 @@ console.log(myNewArray)
     Podemos ver que para quedarme con los elementos  "Hernandez", "Ladino" unicamente, ponemos el pedazo unicamente
     en este caso 2, 4 . Donde el 4 No se tiene en cuenta.
     Es como decir: “Córtame desde la posición 2 hasta la 4, pero no me des la 4”. El FIN es “hasta aquí, pero NO me lo metas en el resultado”.
+    Slice: sirve para copiar una parte del array y devolver un nuevo array, sin modificar el original.
 */
 
 // splice: Splice elimina los elementos, desde el indice que queremos empezar a eliminar y cuantos elementos queremos eliminar.
 console.log("____________________________Splice____________________________________")
+console.log(myArray)
 myArray.splice(2, 3)
 
 console.log(myArray)
@@ -162,6 +164,8 @@ console.log(myArray)
     elementos queremos eliminar ("Sebastian", "Hernandez") y el tercer 3 elemento es que a la vez que eliminamos y
     asignamos un nuevo valor partir de la pocision 1.
     Este es un pequeño ejemplo de como podemos manipular arrays 
+    
+    splice() es un método de los arrays que sirve para: Agregar elementos, Reemplazar elementos, Eliminar elementos (CRUD).
 */ 
 /*  
     Ya vimos la primera estructura de datos javaScript, pero nos falta por ver mas estructuras de datos a 
