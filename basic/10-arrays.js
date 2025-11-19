@@ -127,27 +127,28 @@ myArray = []
 myArray.length = 0       // Ptra alternativa No recomendada
 console.log(myArray)
 
-// slice: Slice devuelve una copia superficial de una porción, nos genera un nuevo array pero justo con el pedazo que queremos
+// slice: Slice devuelve una copia superficial de una porción, nos genera un nuevo array pero justo con el pedazo que queremos, tiene un inicio y un fin
 console.log("____________________________Slice____________________________________")
 myArray = ["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true]
 
 let myNewArray = myArray.slice(2, 4)    // Para quedarnos con los elementos "Hernandez", "Ladino", el segundo valor no se cuenta asi que ponemos 2, 4
 
 console.log(myArray)
-console.log(myNewArray)
+console.log(myNewArray)       
 /*  
     Podemos ver que para quedarme con los elementos  "Hernandez", "Ladino" unicamente, ponemos el pedazo unicamente
-    en este caso 2, 4 . Donde el 3 No se tiene en cuenta 
+    en este caso 2, 4 . Donde el 4 No se tiene en cuenta.
+    Es como decir: “Córtame desde la posición 2 hasta la 4, pero no me des la 4”. El FIN es “hasta aquí, pero NO me lo metas en el resultado”.
 */
 
-// splice: Splice elimina los elementos, desde el indece que queremos empezar a eliminar y cuantos elementos queremos eliminar.
+// splice: Splice elimina los elementos, desde el indice que queremos empezar a eliminar y cuantos elementos queremos eliminar.
 console.log("____________________________Splice____________________________________")
 myArray.splice(2, 3)
 
 console.log(myArray)
 /*  
     myArray.splice(2, 3), el primer valor 2 es desde que elemento queremos eliminar osea que desde "Hernandez",
-    y el segundo valor 3 es cuantos elementos queremos eliminar osea que eliminamos tres elementos
+    y el segundo valor 3 es cuantos elementos queremos eliminar, osea que eliminamos tres elementos
     "Hernandez", "Ladino", 37. Quedando en nuestro array final [ 'Jeferson', 'Sebastian', true ]      2:44
 */  
 

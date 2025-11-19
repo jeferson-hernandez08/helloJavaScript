@@ -5,9 +5,20 @@ console.log(animals);
 
 // 2. Añade dos más. Uno al principio y otro al final
 console.log("___________________________Respuesta Pregunta 2_____________________________________")
+animals.unshift("Caballo");
+console.log(animals);
+
+animals.push("Osa Panda");
+console.log(animals);
 
 
 // 3. Elimina el que se encuentra en tercera posición
+console.log("___________________________Respuesta Pregunta 3_____________________________________")
+console.log("******Eliminar Elementos******")
+animals.splice(2);
+console.log(animals);
+
+//TERMINAR AQUI TODO EL CRUDS DE EJEMPLOS
 
 // 4. Crea un set que almacene cinco libros
 
