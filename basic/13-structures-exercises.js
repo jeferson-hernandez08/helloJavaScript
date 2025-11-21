@@ -19,7 +19,7 @@ console.log(animals);
 animals.splice(2, 1);
 console.log(animals);
 
-//TERMINAR AQUI TODO EL CRUDS DE EJEMPLOS
+//TERMINAR AQUI TODO EL CRUDS DE EJEMPLOS....
 
 // 4. Crea un set que almacene cinco libros
 
