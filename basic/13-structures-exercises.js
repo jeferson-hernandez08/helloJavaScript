@@ -8,16 +8,31 @@ console.log("___________________________Respuesta Pregunta 2____________________
 animals.unshift("Caballo");
 console.log(animals);
 
-animals.push("Osa Panda");
+animals.push("Oso Panda");
 console.log(animals);
 
 
-// 3. Elimina el que se encuentra en tercera posición
+// 3. Elimina el que se encuentra en tercera posición y realiza CRUD
 console.log("___________________________Respuesta Pregunta 3_____________________________________")
 console.log("******1. Eliminar Elementos******")
 console.log(animals);
-animals.splice(2, 1);
+animals.splice(3, 1);
 console.log(animals);
+
+console.log("******2. Crear o Agregar Elementos******")
+console.log(animals);
+animals.splice(2, 0, "Pato");
+console.log(animals);
+
+console.log("******3. Editar o Reemplazar Elemento******")
+console.log(animals);
+animals.splice(2, 1, "Loro");
+console.log(animals);
+
+console.log("******4. Eliminar Desde un Indice Hasta el Final******")
+console.log(animals);
+animals.splice(2);
+console.log(animals)
 
 //TERMINAR AQUI TODO EL CRUDS DE EJEMPLOS....
 

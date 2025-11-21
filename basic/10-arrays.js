@@ -138,7 +138,8 @@ console.log(myNewArray)
 /*  
     Podemos ver que para quedarme con los elementos  "Hernandez", "Ladino" unicamente, ponemos el pedazo unicamente
     en este caso 2, 4 . Donde el 4 No se tiene en cuenta.
-    Es como decir: “Córtame desde la posición 2 hasta la 4, pero no me des la 4”. El FIN es “hasta aquí, pero NO me lo metas en el resultado”.
+
+    Es como decir: “Córtame desde la posición 2 hasta la posición 4, pero no me des la 4”. El FIN es “hasta aquí, pero NO me lo metas en el resultado”.
     Slice: sirve para copiar una parte del array y devolver un nuevo array, sin modificar el original.
 */
 
@@ -165,7 +166,13 @@ console.log(myArray)
     asignamos un nuevo valor partir de la pocision 1.
     Este es un pequeño ejemplo de como podemos manipular arrays 
     
-    splice() es un método de los arrays que sirve para: Agregar elementos, Reemplazar elementos, Eliminar elementos (CRUD).
+    splice() es un método de los arrays que sirve para: Agregar elementos, Reemplazar elementos, Eliminar elementos (CRUD). Modifica directamente el array original.
+    Sintaxis:
+    array.splice(inicio, cantidad, elemento1, elemento2, ...);
+    Parámetros:
+    1. inicio → índice desde donde comienzas a afectar el array
+    2. cantidad → cuántos elementos quieres eliminar
+    3. elementos nuevos (opcionales) → lo que vas a insertar
 */ 
 /*  
     Ya vimos la primera estructura de datos javaScript, pero nos falta por ver mas estructuras de datos a 
