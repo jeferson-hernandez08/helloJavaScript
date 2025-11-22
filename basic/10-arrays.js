@@ -143,22 +143,56 @@ console.log(myNewArray)
     Slice: sirve para copiar una parte del array y devolver un nuevo array, sin modificar el original.
 */
 
-// splice: Splice elimina los elementos, desde el indice que queremos empezar a eliminar y cuantos elementos queremos eliminar.
+// splice: splice() es un método de los arrays que sirve para: Agregar elementos, Reemplazar elementos, Eliminar elementos (CRUD) desde al índice o pocisión que queramos. Modifica directamente el array original. | Splice elimina los elementos, desde el indice que queremos empezar a eliminar y cuantos elementos queremos eliminar.
 console.log("____________________________Splice____________________________________")
+console.log("******1. Eliminar Elementos******")
 console.log(myArray)
-myArray.splice(2, 3)
-
+myArray.splice(2, 3)    // desde índice 2, elimina 3 elementos
 console.log(myArray)
 /*  
-    myArray.splice(2, 3), el primer valor 2 es desde que elemento queremos eliminar osea que desde "Hernandez",
+    myArray.splice(2, 3), el primer valor 2 es desde que elemento indice queremos eliminar osea que desde "Hernandez",
     y el segundo valor 3 es cuantos elementos queremos eliminar, osea que eliminamos tres elementos
     "Hernandez", "Ladino", 37. Quedando en nuestro array final [ 'Jeferson', 'Sebastian', true ]      2:44
+    Desde índice 2, elimina 3 elementos
 */  
 
+console.log("****Eliminar Un Elemento****")
 myArray = ["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true]
+console.log(myArray)
+myArray.splice(2, 1);   
+console.log(myArray)
+/*  
+    Desde índice 2, elimina 1 elemento
+*/
 
+console.log("******2. Crear o Agregar Elemento******")
+console.log(myArray);
+myArray.splice(2, 0, "Arely");
+console.log(myArray);
+/*  
+    En índice 2, NO elimines nada, agrega "Arely"
+*/
+
+console.log("******3. Editar o Reemplazar Elemento******")
+console.log(myArray);
+myArray.splice(3, 1, "Edgar");
+console.log(myArray);
+/*  
+    En índice 3("Arely"), elimina 1 ("Arely") y agrega "Edgar"
+*/
+
+console.log("******4. Eliminar Desde un Indice Hasta el Final******")
+console.log(myArray);
+myArray.splice(1);
+console.log(myArray);
+/*  
+    En índice 1 elimina TODO lo que sigue
+*/
+
+console.log("******5. Ejemplo de manipulaciín de arrays******")
+myArray = ["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true]
+console.log(myArray)
 myArray.splice(1, 2, "Nuevo elemento")
-
 console.log(myArray)
 /*  
     En esto ejemplo podemos ver que el primer valor 1 es desde dpnde queremos eliminar, el segundo valor 2 es cuantos

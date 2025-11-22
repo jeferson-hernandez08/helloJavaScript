@@ -19,7 +19,7 @@ console.log(animals);
 animals.splice(3, 1);
 console.log(animals);
 
-console.log("******2. Crear o Agregar Elementos******")
+console.log("******2. Crear o Agregar Elemento******")
 console.log(animals);
 animals.splice(2, 0, "Pato");
 console.log(animals);
