@@ -34,9 +34,8 @@ console.log(animals);
 animals.splice(2);
 console.log(animals)
 
-//TERMINAR AQUI TODO EL CRUDS DE EJEMPLOS....
-
 // 4. Crea un set que almacene cinco libros
+console.log("___________________________Respuesta Pregunta 4_____________________________________")
 
 // 5. Añade dos más. Uno de ellos repetido
 
