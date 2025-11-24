@@ -47,7 +47,7 @@ console.log(myMap)                          // Nos aparece un cuarto elemento
     Con los sets es la forma de actualizar o añadir valores
 */
 
-// get: El get nos sirve para recuperar el valor
+// get: El get nos sirve para recuperar o obtener el valor
 console.log("____________________________Get____________________________________")
 console.log(myMap.get("name"))           // Nos imprime Jeferson Hernandez
 console.log(myMap.get("surname"))        // Nos improme undefined: Por que no existe la clave "surname"

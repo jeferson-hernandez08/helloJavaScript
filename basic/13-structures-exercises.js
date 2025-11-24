@@ -52,28 +52,67 @@ console.log(myBooks);
 
 // 7. Crea un mapa que asocie el número del mes a su nombre  
 console.log("___________________________Respuesta Pregunta 7_____________________________________")
-let myDate = new Map([   
-    ["01", "Enero"],
-    ["02", "Febrero"],
-    ["03", "Marzo"],
-    ["04", "Abril"],
-    ["05", "Mayo"],
-    ["06", "Junio"],
-    ["07", "Julio"],
-    ["08", "Agosto"],
-    ["09", "Septiembre"],
-    ["10", "Octubre"],
-    ["11", "Noviembre"],
-    ["12", "Diciembre"]
+let meses = new Map([   
+    [1, "Enero"],
+    [2, "Febrero"],
+    [3, "Marzo"],
+    [4, "Abril"],
+    [5, "Mayo"],
+    [6, "Junio"],
+    [7, "Julio"],
+    [8, "Agosto"],
+    [9, "Septiembre"],
+    [10, "Octubre"],
+    [11, "Noviembre"],
+    [12, "Diciembre"]
 ]);
-console.log(myDate);
-
+console.log(meses);
 
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
+console.log("___________________________Respuesta Pregunta 8____________________________________")
+console.log(meses.has(5));
+console.log(meses.get(5));
 
 // 9. Añade al mapa una clave con un array que almacene los meses de verano 
+console.log("___________________________Respuesta Pregunta 9____________________________________")
+console.log("******Primera Forma******")
+meses.set("Verano", ["Junio", "Julio", "Agosto"]);    // Crear elementos nuevos
+console.log(meses);
+console.log(meses.get("Verano"));
+
+console.log("******Segunda Forma******")
+meses.set("Verano2", [meses.get(6), meses.get(7), meses.get(8)]);     // Obtenemos los mismo valores directamente del array
+console.log(meses);
+console.log(meses.get("Verano2"));
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
+console.log("___________________________Respuesta Pregunta 10____________________________________")
+console.log("******Creación de Array******")
+let fruits = ["Manzana", "Pera", "Fresa", "Pera", "Mango", "Banano"];
+console.log(fruits);
+
+console.log("******Transformación de Array a Set******")
+let fruitsSet = new Set(fruits);
+console.log(fruitsSet);           // Recordemos que Set no guarda valores o datos duplicados.
+
+console.log("******Almacenar Set en un Map******")
+let fruitMap = new Map([
+    ["Frutas", fruitsSet]
+]);
+console.log(fruitMap);
+console.log(fruitMap.get("Frutas"));
+
+console.log("******Convertir a array otravez Map a Array******")
+let fruitsArray = [...fruitMap.get("Frutas")];     // Operador spread (...), Si no lo ponemos nos devuelve el Set
+console.log(fruitsArray);
+/*
+    El operador spread ... permite “desempacar” los elementos del Set y colocarlos dentro de un nuevo array.
+    El spread operator (...) toma un objeto iterable (como Set, Array, String, Map) y:
+    desempaqueta
+    expande
+    coloca cada elemento individualmente dentro de otro array
+*/
+
 
 
 // Comentario quede en : 03:12:50 min //
