@@ -1,4 +1,4 @@
-// set: Los sets tambien son estrcuturas de datos.
+// set: Los sets tambien son estructuras de datos.
 
 // Declaración de set
 console.log("____________________________Declaración de set____________________________________")
@@ -27,8 +27,23 @@ mySet.add("jefer.hernandez1@gmail.com")
 
 console.log(mySet)
  /*
-    En el set en javascript se mantienen la ordenación de los elementos, por eso el add
-    lo añade al final
+   En el set en javascript se mantienen la ordenación de los elementos, por eso el add
+   lo añade al final
+
+   Set NO permite agregar valores duplicados o repetidos:  
+   Si intentamos agregar un valor que ya existe, simplemente lo ignora.
+   No da error, no rompe tu código… solo no lo vuelve a agregar. No lo agrega. No modifica nada.
+
+   Set tiene una regla:
+   Cada valor debe ser único.
+   Esto es una gran ventaja cuando necesitamos:
+   eliminar duplicados
+   garantizar unicidad
+   hacer búsquedas rápidas
+
+   Forma sencilla de recordarlo:
+   Array → permite repetidos
+   Set → NO permite repetidos
  */
 
 // delete: Es para eliminar un elemento de nuestra lista

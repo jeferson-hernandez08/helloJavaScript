@@ -36,10 +36,19 @@ console.log(animals)
 
 // 4. Crea un set que almacene cinco libros
 console.log("___________________________Respuesta Pregunta 4_____________________________________")
+let myBooks = new Set(["El Monje que Vendió su Ferrari", "Vendes o Vendes", "Los secretos de la mente millonaria", "El hombre en busca de sentido", "No Me Puedes Lastimar"]);
+console.log(myBooks);
 
 // 5. Añade dos más. Uno de ellos repetido
+console.log("___________________________Respuesta Pregunta 5_____________________________________")
+myBooks.add("El Monje que Vendió su Ferrari");   // Set no permite Crear valores repetidos.
+myBooks.add("Padre Rico Padre Pobre");
+console.log(myBooks);
 
 // 6. Elimina uno concreto a tu elección
+console.log("___________________________Respuesta Pregunta 6_____________________________________")
+myBooks.delete("Vendes o Vendes");    // Set no se referencia por indice si no por los datos en especifico
+console.log(myBooks);
 
 // 7. Crea un mapa que asocie el número del mes a su nombre
 
