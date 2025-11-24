@@ -50,11 +50,28 @@ console.log("___________________________Respuesta Pregunta 6____________________
 myBooks.delete("Vendes o Vendes");    // Set no se referencia por indice si no por los datos en especifico
 console.log(myBooks);
 
-// 7. Crea un mapa que asocie el número del mes a su nombre
+// 7. Crea un mapa que asocie el número del mes a su nombre  
+console.log("___________________________Respuesta Pregunta 7_____________________________________")
+let myDate = new Map([   
+    ["01", "Enero"],
+    ["02", "Febrero"],
+    ["03", "Marzo"],
+    ["04", "Abril"],
+    ["05", "Mayo"],
+    ["06", "Junio"],
+    ["07", "Julio"],
+    ["08", "Agosto"],
+    ["09", "Septiembre"],
+    ["10", "Octubre"],
+    ["11", "Noviembre"],
+    ["12", "Diciembre"]
+]);
+console.log(myDate);
+
 
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
 
-// 9. Añade al mapa una clave con un array que almacene los meses de verano
+// 9. Añade al mapa una clave con un array que almacene los meses de verano 
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
 
