@@ -24,10 +24,33 @@
 
 // For: For lo que hace es ejecutarse con una condicion que se cada vez que realiza una iteración, si la condicion es true se va seguir ejecutando y si pasa a false del loop deja de ejecutarse. 
 console.log("____________________________For____________________________________")
+/*  
+    Vamos a saludar en cinco veces.
+*/
 for (let i = 0; i < 5; i++) {
-    console.log("Hola");
+    console.log(`Hola ${i}`);
+}
+/*  
+    El primer valor es valor de inicializacion, el segundo es la condicion para que se ejecute o 
+    condición de parada y el tercer valor es incremento.
+        Prueba Escritorio:
+        - Valida cero es menor a 5 ? , es como una especie de if que se evalua mientras la condicion sea verdadera
+        - Si -> Se Ejecuta el codigo para imprimir.
+        - Luego i pasa a incrementar, cero pasa a valer 1. Asi sucesivamente
+        - Luego finalmente 5 es menor que 5 ? No, es igual y cierra el bucle. 
+        Resutado: Se ejecuta el programa saludo 5 veces por que empieza desde el cero.
+*/
+
+/*  
+    Ahora vamos a realizar pensando con estructuras de datos que almacenan varios valores.
+    Queremos recorrer este array, imprimir todos los elementos de este array.
+*/
+const numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < 5; i++) {
+    console.log(`Elemento: ${numbers[i]}`);
 }
 
 
-// Comentario quede en : 03:17:50 min Bucles
+// Comentario quede en : 03:20:50 min Bucles
 
