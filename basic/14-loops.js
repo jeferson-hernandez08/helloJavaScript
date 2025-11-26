@@ -41,6 +41,7 @@ for (let i = 0; i < 5; i++) {
         Resutado: Se ejecuta el programa saludo 5 veces por que empieza desde el cero.
 */
 
+console.log("******For Array******")
 /*  
     Ahora vamos a realizar pensando con estructuras de datos que almacenan varios valores.
     Queremos recorrer este array, imprimir todos los elementos de este array.
