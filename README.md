@@ -1,4 +1,4 @@
 # helloJavaScript
 JavaScript - Análisis y desarrollo de software. 
 
-![JS](https://www.cursosgis.com/wp-content/uploads/1-52.jpg)
+![JS](https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/js.jpg)
