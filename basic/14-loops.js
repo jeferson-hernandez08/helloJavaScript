@@ -165,6 +165,24 @@ for (let valor of myString) {
      que revientan la aplicacion por no deja de ejecutarse. 
 */
 
+// Break y continue : 
+console.log("____________________________Break y Continue____________________________________")
+for (let i = 0; i < 10; i++) {
+    if (i == 5) {
+        continue;
+    } else if (i == 7) {
+        break;
+    }
+    console.log(`Hola ${i}`);
+}
+/*  
+   - Continue: En este ejemplo por ejemplo si el indice vale 5 no lo queremos tener en cuenta, es saltarnos esa iteracion, 
+   le estamos indicando que continua pero en el siguiente ejecucion saltandonos el 5 
+   - Break: En este caso cuando la iteracion llegue a 6 lo que hacemos es parar el bucle, por ejemplo si
+   encontramos el valor que realmente nos importa. Break es romper parar, nor sirve para controlar el flujo de 
+   los blucles. 
+*/
+
 
 
 // Comentario quede en : 03:30: min Bucles
