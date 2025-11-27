@@ -119,7 +119,8 @@ console.log(myArray)
 
 // length: Length es una propiedad y no una funcion, es la longitud o tamaño de nuestro array
 console.log("____________________________Length____________________________________")
-console.log(myArray.length)
+console.log(myArray);
+console.log(myArray.length);
 
 // clear
 console.log("____________________________Clear____________________________________")
