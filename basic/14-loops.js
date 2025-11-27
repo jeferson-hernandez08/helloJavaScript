@@ -69,7 +69,6 @@ for (let i = 0; i < numbers.length; i++) {
 
 // While: El while evalua antes de cada iteracion, si es true el bucle continua y si es false el bucle termina.
 console.log("____________________________While____________________________________")
-console.log("******While******")
 /*  
     Vamos a saludar en cinco veces.
 */
@@ -99,10 +98,74 @@ console.log("Se deja comentado por que es bucle infinito")
    Se deja comentado por que es bucle infinito, de lo contrqario no deja avanzar queda atrapado el codigo.
 */
 
-// Do While:
+// Do While: Es para ejecutar primero el código y despues evaluar, ejecuta y luego evalua
 console.log("____________________________Do While____________________________________")
-let age = 19;
+i = 6;
+
+do {
+    console.log(`Hola ${i}`);
+    i++;
+} while(i < 5);
+/*  
+   Funciona muy parecido al while, pero tiene que ejecutarse al menos una vez
+   - En este caso de i = 6 primero no evaluamos nada, donde primero va ejecutar se cumpla o no se cumpla 
+     la condición, esto es por que no evaluamos antes como en For o como en el While, en este caso ejecuta una vez 
+     y despues sabemos que ya no cumole la condición y cierra el programa.
+   - Do While es para los casos que necesitemos ejecutar un bloque de codigo y despues evaluar. 
+*/
+
+// For Of: For off es para recorrer valores de algo que sea iterable y algo que sea iterable es estructuras de datos o un tipo de dato.
+console.log("____________________________For Off____________________________________")
+myArray = [1, 2, 3, 4]
+mySet = new Set(["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true])
+myMap = new Map([                                  // Lo inicializamos con los corchetes adicionalmente
+    ["name", "Jeferson"],                          // Para definir el par de clave y valor tambien es corchetes, en este caso la clave es "name" y el valor es "Jeferson"
+    ["email", "jefer.hernandez1@gmail.com"],       // Para añadir otro elemento lo separamos con coma.
+    ["age", 29]                                  // Estamos mezclando otro tipo de datos
+])
+let myString = "Hola JavaScript";
+
+for (let valor of myArray) {
+    console.log(valor)
+}
+
+for (let valor of mySet) {
+    console.log(valor)
+}
+
+for (let valor of myMap) {
+    console.log(valor)
+}
+
+for (let valor of myString) {
+    console.log(valor)
+}
+/*  
+   Primero necesitamos algo que sea iterable, estructuras de datos ya vimos estructuras de datos de array
+   set y map, vamos a ver como recorrer cada una de ellas, como ejecutar un bloque de codigo por cada uno 
+   de los elementos de nuestra estructura.
+
+   - Primero creamos una variable en este caso valor y luego le pasamos el of de lo que queremos iterar
+     en este caso myArray y podemos ver que se ejecuta el for por cada uno de los valores del array o 
+     recorriendo el array y asi mismo recorremos las estructutras de datos con set y map.
+   - En este caso con el for of lo que podemos hacer es recorrer los arrays para revisar todos los valores
+     que tenemos en cada una de nuestras estructuras de datos aqui simplemente los imprimimos, pero si queremos
+     realizar modificaciones, comprobaciones, de manera extensa para todos los valores ya lo hacemos con el For, 
+     for of es una manera de recorrer los elemntos de un array o estructura de dato. 
+   - Lo podemos hacer con mas tipos de datos, con una variable de tipo string sin ser una estructura de datos
+     tambien el for of lo recorre, donde la cadena de texto de JS se comporta internamente como una estructura 
+     que tiene un listado de caracteres por defecto nos permite iterarla.
+   - Esto es una forma de recorrer arrays 
+*/
+
+// Buenas Prácticas:
+/*  
+   - Siempre que estemos creando bucles revisar que no provoquemos un bucle infinito siempre asegurarnos
+     que la condicion acabe siendo false, tener muchoncuidado con esto por que hay aplicaciones en produccion 
+     que revientan la aplicacion por no deja de ejecutarse. 
+*/
 
 
-// Comentario quede en : 03:24:44 min Bucles
+
+// Comentario quede en : 03:30: min Bucles
 
