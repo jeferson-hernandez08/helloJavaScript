@@ -159,6 +159,8 @@ for (let valor of myString) {
 */
 
 // Buenas Prácticas:
+console.log("____________________________Buenas Prácticas____________________________________")
+console.log("Consejos de buenas prácticas");
 /*  
    - Siempre que estemos creando bucles revisar que no provoquemos un bucle infinito siempre asegurarnos
      que la condicion acabe siendo false, tener muchoncuidado con esto por que hay aplicaciones en produccion 
