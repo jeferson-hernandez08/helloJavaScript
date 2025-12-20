@@ -33,11 +33,20 @@ function myFunc() {
 
 
 /*  
-    Creaamoa la palabra function y el nombre de una function es como las variables las creamos en camelCase,
-    una function debe tener un nombre representativo un nombre que entandamos
+    - Creamos la palabra function
+    - Creamos el nombre de una function, es como las variables las creamos en camelCase,
+      una function debe tener un nombre representativo un nombre que entandamos, como si fuera la creación 
+      de una varibale 
+    - Abrimos y cerramos parentesis, aqui es la inserción de parametros.
+    - Abrimos y cerramos llaves, aquí dentro se le inserta al codigó de la tarea especifica, este seria 
+      el bloque de código.
+
+    Esta seria la función la funcion un bloque de código que realiza una tarea especifica, una función realiza
+    una tarea especifica en este caso simplemente imprimir por consola. Lo que realmente hace especial una 
+    función es que puede ser invocada. 
     
 */
 
 
-// Comentario quede en : 03:35: min Funciones -- 
+// Comentario quede en : 03:36: min Funciones -- 
 
