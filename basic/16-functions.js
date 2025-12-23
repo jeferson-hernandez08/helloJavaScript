@@ -65,12 +65,58 @@ myFuncWithParams("Sebastian");    // Pasamos el dato del parámetro nombre
 
 // Funciones Anónimas: Las funciones anonimas son funciones que no tienen un nombre definivo.
 console.log("____________________________Funciones con Anónimas____________________________________")
+const myFunc2 = function (name) {
+    console.log(`¡Hola, ${name}!`);
+}
 
+myFunc2("Jeferson Hernandez");
 /* 
+  Las funciones anonimas son funciones que no tienen un nombre definivo. 
   Quiere decir que creamos una funcion donde le pasamos el nombre o parámetro que queramos y simplemente
   meterle la ejecución.
-  Pero lo que pasa con las fucniones anonimas es que 
+  Pero lo que pasa con las funciones anonimas es que la tenemos que asignar a una variable o a una 
+  constante, por que si no, no tendriamos ninguna manera de invocarla o llamarla.
+  En este caso lo que tiene nombre es la variable constante, la function es un nombre generico, lo que podemos
+  invocar la variable.
+  Lo que le damos es la capcidad de almacernarla en una variable constante, para esto se usa las funciones anonimas.
+
+  Ejemplos de funciones que usamos en nuestra dia a dia:
+    - console.log(): log es una funcion deconsola y se le pide la cadena de texto.
+    - En los maps: El has, el get, el keys, el values, etc. son funciones asignadas a mapas. En este ejemplo 
+      son funciones que nos devuelve cuales son los valores. Osea que los propios datos de JS tambien tienen
+      funciones asignadas. 
 */
+
+// Arrow Functions: Traduce funciones flecha, es una manera mas reducida de escribir funciones. Es para simplificar.
+console.log("____________________________Funciones flecha o Arrow Functions____________________________________")
+console.log("******Arrow Functions******")
+const myFunct3 = (name) => {
+  console.log(`¡Hola, ${name}!`);
+}
+
+myFunct3("Sebastian Hernandez");
+/* 
+  Se quita la function dejando solamente el parametro y se pone => que es funcion flecha y finalmente se 
+  define el bloque de código con corchetes y dentro nuestra lógica. 
+  En las arrow functions tenemos el mismo problema que las funciones anónimas, le tenemos que asignarlas a una
+  variable constante para poderlas invocar.
+  La función anonima la podemos sustituir or la funcion flecha, por que es una sintaxis simplificada.
+  Se suele usar los arrow functions cuando lo queremos usar en una sola línea.
+*/
+
+console.log("******Arrow Functions en una Sola Línea******")
+const myFunct4 = (name) => console.log(`¡Hola, ${name}!`);
+
+myFunct4("Sebastian Hernandez Ladino");
+/* 
+  Se suele usar los arrow functions cuando lo queremos usar en una sola línea, de esta menera tiene
+  mucho más sentido.
+  Simplemente se elimina el bloque de llaves y ponemos nuestra lógica.
+*/
+
+// Sección de Parámetros: 
+console.log("____________________________Seccion de Parámetros____________________________________")
+
 
 // Comentario quede en : 03:39: min Funciones -- ..
 
