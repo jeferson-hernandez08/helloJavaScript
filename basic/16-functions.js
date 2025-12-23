@@ -116,13 +116,42 @@ myFunct4("Sebastian Hernandez Ladino");
 
 // Sección de Parámetros: 
 console.log("____________________________Seccion de Parámetros____________________________________")
+console.log("******Parámetros******")
 function sum(a, b) {
-  
+  console.log(a + b);
 }
+
+sum(5, 10);
+sum(5);
+sum();
 /* 
-  Para meter mas de un parametro los concatenemos con , 
+  Para meter mas de un parametro los concatenamos con comas.
+  Realizamos una funcion suma que le llamamos para pasarle dos numeros para sumar.
+  Si llamamos a la funcion sum solo con un 5 o solo un arametro nos va aarecer NaN, por que intenta sumar un 5
+  con nada 
+  Si llamamos la funcion sum sin un parametro tambien nos va aparecer NaN.
 */
 
+console.log("******Parámetros por Defecto******")
+function defaultSum(a = 0, b = 0) {
+  console.log(a + b);
+}
 
-// Comentario quede en : 03:39: min Funciones -- ..
+defaultSum();
+defaultSum(5);       // 5 + 0 = 5
+defaultSum(5, 10);   
+defaultSum(b = 5);   
+/* 
+  - Si no queremos pasarle nada le decimos que valga por defecto 0, a = 0, b = 0, lo cual si llamamos a defaultSum
+  nos tiene que parecer NaN.
+  - Si le pasamos uno solo seria 5 + 0 = 5 
+  - Si le pasamos los datos 5, 10 ya nos aparece normalmente, reemplazando los datos por defecto.
+  - Si le pasamos b = 5 nos da 5 por que simplente le estamoos diciendo que cubra b con 5. 
+*/
+
+// Retorno de Valores: 
+console.log("____________________________Retorno de Valores____________________________________")
+
+
+// Comentario quede en : 03:45: min Funciones -- ..
 
