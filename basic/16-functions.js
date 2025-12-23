@@ -116,6 +116,12 @@ myFunct4("Sebastian Hernandez Ladino");
 
 // Sección de Parámetros: 
 console.log("____________________________Seccion de Parámetros____________________________________")
+function sum(a, b) {
+  
+}
+/* 
+  Para meter mas de un parametro los concatenemos con , 
+*/
 
 
 // Comentario quede en : 03:39: min Funciones -- ..
