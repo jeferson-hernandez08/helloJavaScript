@@ -149,9 +149,30 @@ defaultSum(b = 5);
   - Si le pasamos b = 5 nos da 5 por que simplente le estamoos diciendo que cubra b con 5. 
 */
 
-// Retorno de Valores: 
+// Retorno de Valores: El retorno de valores es el resultado que una función devuelve después de ejecutar su lógica.
 console.log("____________________________Retorno de Valores____________________________________")
+function mult(a, b) {
+  return a * b;
+}
+
+mult(5, 10);
+//console.log(mult(5, 10));
+let result = mult(5, 10);
+console.log(result);       // El retorno es el resultado que una función devuelve
+
+/* 
+  Recordemos que una funcion tiene logica dentro de la funcion, pero si queremos realizar una operacion que nos
+  retorne el resultado de la logica para despues utilizarla apra esto es el retono. 
+  - Por jemplo en el defaultsum queremos no imprimir el resultado de la suma sino que me diga cuanto suma, para 
+  esto tenemos el retorno. 
+  - En esta funcion mult No queremos mostrarlo por terminal si no retonarle el resultado al usuario, para esto hacemos el 
+  return, lo que pasemos despues del return es lo que va devolver a la persona que acabe llamando a la funcion mult.
+  - Lamamos a mult le pasamos los valores del 5, 10 podemos ver que no nos imprime, debemos hacerle un cosole.log  
+  Podemos ver devuelve el resultado de 5 * 10 y despues decimos imprimirlo en un console.log. 
+  - En este caso llamamos a mult, mult retorna el resultado de multiplicar 5 * 10 lo que lo guardamos en una variable
+  que se llama result y result es lo que imprimimos en un console.log 
+*/
 
 
-// Comentario quede en : 03:45: min Funciones -- .. .. 
+// Comentario quede en : 03:45: min Funciones -- ..  ..
 
