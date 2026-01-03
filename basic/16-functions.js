@@ -159,7 +159,6 @@ mult(5, 10);
 //console.log(mult(5, 10));
 let result = mult(5, 10);
 console.log(result);       // El retorno es el resultado que una función devuelve
-
 /* 
   Recordemos que una funcion tiene logica dentro de la funcion, pero si queremos realizar una operacion que nos
   retorne el resultado de la logica para despues utilizarla apra esto es el retono. 
@@ -171,8 +170,154 @@ console.log(result);       // El retorno es el resultado que una función devuel
   Podemos ver devuelve el resultado de 5 * 10 y despues decimos imprimirlo en un console.log. 
   - En este caso llamamos a mult, mult retorna el resultado de multiplicar 5 * 10 lo que lo guardamos en una variable
   que se llama result y result es lo que imprimimos en un console.log 
+
+  ¿Para qué sirve el return?
+
+    Sirve para:
+
+    Obtener un resultado
+    Guardar ese resultado en una variable
+    Usarlo en otra función
+    Tomar decisiones (if)
+    Reutilizar lógica
+
+    Analogía sencilla:
+
+      Piensa en una función como una calculadora:
+      Le das números (parámetros)
+      Hace el cálculo
+      Te devuelve el resultado (return)
+*/
+
+// Funciones anidadas: Una función anidada es una función definida dentro de otra función.
+console.log("____________________________Funciones Anidadas____________________________________")
+console.log("******Funciones Anidadas******")
+function extern() {
+  console.log("Función externa");
+  function intern() {
+    console.log("Función interna");
+  }
+  intern();
+}
+
+extern();
+//intern();  Fuera del scope
+//extern().intern();
+/* 
+  Vemos que nos imprime función externa y pero No función interna, esto es por que funcion interna esta dentro
+  de la función externa lo que tenermos que llamarma o invocarla. 
+  Pero si llamamos la función interna sale error, esto es debido por el scope el scope es el rango de actuacion,
+  el scope es lo que está marcado por las llaves. Conocemos funcion externa por que estamos llamando una funcion
+  normalmente, pero cuando llamamos funcion interna no lo conoce por que es llamado dentro de interna o es llamado
+  fuera del scope.
+  Donde dentro de extern podemos llamar intern y si funciona. 
+  Si tratamos de llamar a intern por fuera no nos funciona extern().intern(); podemos darnos cuenta como funcina el scope
+  Extern y intern pueden recibir parámetros, puede retornar. 
+
+  Conclusión:
+    - interna() vive dentro de externa()
+    - No puede usarse fuera de externa()
+
+  ¿Para qué se usan las funciones anidadas?
+
+    Se usan para:
+
+     Encapsular lógica
+     Proteger funciones internas
+     Organizar mejor el código
+     Trabajar con closures
+     Evitar contaminar el scope global
+  
+  ¿Qué es el scope?
+
+    El scope es el alcance o zona donde una variable o función existe y puede usarse.
+    Dónde una variable “vive” y puede ser usada.
+  
+*/
+
+console.log("******Funciones Anidadas + Scope******")
+function externa() {
+  let nombre = "Jeferson";
+
+  function interna() {
+    console.log(nombre);
+  }
+
+  interna();
+}
+
+externa();
+/*
+  - Por qué pasa esto?
+
+    Porque JavaScript busca las variables:
+
+    1️⃣ Primero dentro de la función
+    2️⃣ Luego en la función externa
+    3️⃣ Luego en el scope global
+
+    Esto se llama scope chain.
+
+  - Ejemplo mental (regla de oro)
+
+   Una función hija sí ve a su padre
+   Una función padre NO ve a su hija
+
+   - ¿Para qué sirve todo esto en la vida real?
+
+    Validaciones internas
+    Funciones helper privadas
+    Closures
+    Librerías
+    Frameworks (React, Node, etc.)
 */
 
 
-// Comentario quede en : 03:45: min Funciones -- ..  ..
+// Scope: El scope es el alcance o zona donde una variable o función existe y puede usarse.
+console.log("____________________________Scope____________________________________")
+console.log("******Scope Global******")
+let nombre = "Jeferson";
+
+function saludar1() {
+  console.log(nombre);
+}
+
+saludar1();
+/*
+  Variables declaradas fuera de funciones.
+  Se puede usar en cualquier parte
+*/
+
+console.log("******Scope Local o de Función******")
+function saludar2() {
+  let mensaje = "Hola";
+  console.log(mensaje);
+}
+
+saludar2();
+//console.log(mensaje); // ERROR
+/*
+  Variables declaradas dentro de una función.
+  mensaje solo existe dentro de la función.
+*/
+
+console.log("******Scope de Bloque (let y conts)******")
+if (true) {
+  let edad = 25;
+  console.log(edad);
+}
+
+//console.log(edad); // ❌ERROR
+/*
+  edad solo existe dentro del bloque {}.
+*/
+
+
+
+
+
+
+
+
+// Comentario quede en : 03:49: min Funciones -- ..  ..
 
