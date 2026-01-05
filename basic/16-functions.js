@@ -201,7 +201,7 @@ function extern() {
 }
 
 extern();
-//intern();  Fuera del scope
+//intern();  Error: Fuera del scope
 //extern().intern();
 /* 
   Vemos que nos imprime función externa y pero No función interna, esto es por que funcion interna esta dentro
@@ -310,6 +310,53 @@ if (true) {
 //console.log(edad); // ❌ERROR
 /*
   edad solo existe dentro del bloque {}.
+*/
+
+// Funciones de Orden Superior: Son funciones que reciben otras funciones como argumento
+console.log("____________________________Funciones de Orden Superior____________________________________")
+function applyFunc(func, param) {
+  func(param)
+}
+
+applyFunc(myFunct4, "Función de orden superior");
+/*
+  Le debemos que tambien pasarle el parametro de la funcion, lo que significa que debemos pasarle la funcion pura
+  y como un parametro el parametro que queremos aplicarle en la funcion.
+  - Aquí estamos anidando la ejecucion de funciones una función que recibe otra función y que aparte tiene 
+  el parametro para ejecutarla y dentro simplemente hace la ejecución de la otra función. 
+*/
+
+// forEach: Un forEach es una función que nos sirve para ejecutar bucles asociados a elementos iterables
+console.log("____________________________ForEach____________________________________")
+myArray = [1, 2, 3, 4]
+mySet = new Set(["Jeferson", "Sebastian", "Hernandez", "Ladino", 37, true])
+myMap = new Map([                                  // Lo inicializamos con los corchetes adicionalmente
+    ["name", "Jeferson"],                          // Para definir el par de clave y valor tambien es corchetes, en este caso la clave es "name" y el valor es "Jeferson"
+    ["email", "jefer.hernandez1@gmail.com"],       // Para añadir otro elemento lo separamos con coma.
+    ["age", 29]                                  // Estamos mezclando otro tipo de datos
+])
+
+myArray.forEach(function (value) {     // De manera normal, en función anonima
+  console.log(value);  // Value es el valor
+})
+  
+myArray.forEach((value) => console.log(value));  // Value es el valor
+
+mySet.forEach((value) => console.log(value));  // Value es el valor
+
+myMap.forEach((value) => console.log(value));  // Value es el valor
+/*
+  - forEch es una operación, una función, un metodo que tiene los arrays de JS y lo que nos ejecuta 
+  realmente es un for.
+  - Esta es una forma que Nos da la capacidad de iterar directamente sobre un array 
+  - Esta una manera muy simple de realizar iteraciones pero en este caso lo combinamos con funcioines por que 
+  foreach es una funcion que permite iterear elementos de una array.
+
+  Ventajas:
+  - El foreach es muy claro ejecutamos un for inmediatamente, es mas resumido y legible que ejecutar un for o while.
+  - Evitamos menos errores
+  Denventaja:
+  - El foreach no puede detenerse con el continue, no retornamos un nuevo array. 
 */
 
 
