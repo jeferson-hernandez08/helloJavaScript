@@ -312,6 +312,34 @@ if (true) {
   edad solo existe dentro del bloque {}.
 */
 
+// Clousure: Es cuando una función recuerda y puede usar las variables de su función externa, incluso después de que esa función externa ya terminó de ejecutarse.
+console.log("____________________________Clousure____________________________________")
+function externa() {
+  let mensaje = "Hola Jeferson";
+
+  function interna() {
+    console.log(mensaje);
+  }
+
+  return interna;
+}
+
+let miClosure = externa();
+miClosure();
+/*
+  Dicho fácil: Una función que “recuerda” el contexto donde fue creada.
+
+  ¿Qué pasó aquí?
+
+    1️⃣ externa() se ejecuta
+    2️⃣ Crea mensaje
+    3️⃣ Retorna la función interna
+    4️⃣ externa() termina
+    5️⃣ PERO interna() sigue recordando mensaje
+
+*/
+
+
 // Funciones de Orden Superior: Son funciones que reciben otras funciones como argumento
 console.log("____________________________Funciones de Orden Superior____________________________________")
 function applyFunc(func, param) {
