@@ -152,7 +152,7 @@ defaultSum(b = 5);
 // Retorno de Valores: El retorno de valores es el resultado que una función devuelve después de ejecutar su lógica.
 console.log("____________________________Retorno de Valores____________________________________")
 function mult(a, b) {
-  return a * b;
+  return a * b;       // Devuelve el resultado
 }
 
 mult(5, 10);
@@ -329,15 +329,98 @@ miClosure();
 /*
   Dicho fácil: Una función que “recuerda” el contexto donde fue creada.
 
-  ¿Qué pasó aquí?
+  Analogía sencilla
+    Imagina que alguien te da una llave de una casa que ya cerraron.
+    Aunque la casa ya no esté abierta,
+    👉 tú sigues teniendo acceso.
+    Eso es un closure.
+
+  ¿Qué pasó aquí en el código?
 
     1️⃣ externa() se ejecuta
     2️⃣ Crea mensaje
     3️⃣ Retorna la función interna
     4️⃣ externa() termina
     5️⃣ PERO interna() sigue recordando mensaje
+  
+  ¿Por qué funciona?
+    
+    Porque JavaScript NO borra las variables si una función interna todavía las necesita.
+
+  ¿Para qué se usan los closures?
+
+    Se usan para:
+
+    ✔️ Mantener datos privados
+    ✔️ Encapsular lógica
+    ✔️ Crear contadores
+    ✔️ Evitar variables globales
+    ✔️ Programación funcional
+    ✔️ Frameworks (React, Vue, etc.)
 
 */
+
+console.log("******Clousure Ejemplo Real: contador******")
+function contador() {
+  let count = 0;
+
+  return function () {
+    count++;
+    return count;
+  };
+}
+
+const incrementar = contador();
+
+console.log(incrementar()); // 1
+console.log(incrementar()); // 2
+console.log(incrementar()); // 3
+/*
+  👉 count es privado
+  👉 Solo la función interna puede modificarlo
+*/
+
+console.log("******Clousure Ejemplo: datos privados******")
+function crearUsuario(nombre) {
+  let password = "1234";
+
+  return {
+    getNombre() {
+      return nombre;
+    },
+    validarPassword(pass) {
+      return pass === password;
+    }
+  };
+}
+
+const user = crearUsuario("Jeferson");
+
+console.log(user.getNombre());        // Jeferson
+console.log(user.validarPassword("1234")); // true
+/*
+  👉 password no se puede acceder directamente
+  👉 Solo mediante funciones
+
+  Importante: ¿Qué NO es un closure?
+
+    ❌ No es solo una función dentro de otra
+    ❌ No es solo usar una variable externa
+
+    ✔️ Es cuando la función sigue usando esa variable después
+
+  Regla mental para recordarlo
+
+    Si una función recuerda variables externas después de ejecutarse → ES un closure.
+
+  Concepto	Explicación
+  Closure	Función que recuerda su scope
+  Para qué	Encapsular, proteger datos
+  Ventaja	Evita globales
+  Clave	Variables siguen vivas
+*/
+
+
 
 
 // Funciones de Orden Superior: Son funciones que reciben otras funciones como argumento
